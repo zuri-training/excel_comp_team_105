@@ -1,5 +1,60 @@
 .login-container {
-  width: 100%;
+  background: var(--nypd-blue);
+  padding-inline: 7rem;
   min-height: 100vh;
-  background: ;
+}
+.form-container {
+  min-height: 90vh;
+  display: grid;
+  place-content: center;
+}
+.login-logo {
+  color: var(--faded-white);
+  font-weight: 600;
+}
+.login-text {
+  color: var(--nypd-blue);
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: red;
+}
+.login-form > .login-input {
+  display: flex;
+  flex-direction: column;
+}
+.login-form label {
+  color: var(--nypd-blue);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.login-form input {
+  border: solid var(--nypd-blue) 2px;
+}
+.login-form input::placeholder {
+  font-family: var(--ff-montserrat);
+  color: var(--grey-clr);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.login-form-checkbox > span {
+  font-family: var(--ff-montserrat);
+  color: var(--faded-white);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.login-form button {
+  background: var(--button-clr);
+  color: var(--faded-white);
+  border: none;
+  outline: none;
+  display: flex;
+  place-content: center;
+  /* padding: 1rem 5rem; */
+  border-radius: 10px;
 }

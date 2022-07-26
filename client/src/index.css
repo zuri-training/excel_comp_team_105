@@ -1,3 +1,7 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
 /* CSS RESETS */
 *,
 *::before,
@@ -45,3 +49,18 @@ h6 {
 /* ----------------- */
 /* CUSTOM VARIABLES */
 /* ---------------- */
+:root {
+  /* COLORS */
+  --nypd-blue: hsl(189, 57%, 34%);
+  --button-clr: hsl(189, 56%, 26%);
+  --faded-white: hsl(0, 0%, 96%);
+  --grey-clr: hsl(180, 2%, 61%);
+
+  /* FONTS */
+  --ff-manrope: "Manrope", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+}
+body {
+  font-family: var(--ff-manrope);
+  font-size: 16px;
+}
