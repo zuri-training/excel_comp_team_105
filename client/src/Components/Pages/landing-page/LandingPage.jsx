@@ -4,6 +4,7 @@ import Card from "../../Reuseable components/Card/Card";
 import LearnMore from "../../Reuseable components/LearnMore/LearnMore";
 import Button from "../../Reuseable components/Button/Button";
 import ViewDemo from "../../Static-components/ViewDemo/ViewDemo";
+import Footer from "../Footer/footer";
 import Image1 from "./image 1.png";
 import Image2 from "./image 2.png";
 import Image3 from "./image 3.png";
@@ -61,7 +62,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="get-started">
-        <div>
+        <div className="get-started__text" >
           <h1>Get your comparisons done with less stress</h1>
           <p>Ready to get started?</p>
         </div>
@@ -69,8 +70,11 @@ const LandingPage = () => {
           <Button>Get Started Now</Button>
         </div>
       </div>
-      <div className="view-demo" >
+      <div className="view-demo">
         <ViewDemo />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

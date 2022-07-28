@@ -13,15 +13,17 @@
 }
 .learnmore-container h1 {
   color: var(--nypd-blue);
-  text-align: center;
   font-size: 1.7em;
+}
+.learnmore-text {
+  text-align: center;
 }
 .learnmore-link {
   margin-block-start: 2rem;
   color: var(--nypd-blue);
   cursor: pointer;
   font-weight: 600;
-  display: flex;
+  display: inline-flex;
 }
 .learnmore-link .arrow-right {
   display: inline-block;
@@ -40,15 +42,8 @@
     flex-flow: row-reverse nowrap;
   }
   .learnmore-text {
-    align-self: center;
+    text-align: left;
     flex-basis: 55%;
-  }
-  .learnmore-text p {
-    text-align: left;
-  }
-  .learnmore-container h1 {
-    text-align: left;
-    padding-block: 0.5rem;
   }
   .learnmore-image {
     max-width: 60%;
