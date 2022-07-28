@@ -33,7 +33,9 @@ textarea,
 select {
   font: inherit;
 }
-ul, ol, a {
+ul,
+ol,
+a {
   list-style: none;
   text-decoration: none;
   color: inherit;
@@ -51,6 +53,9 @@ ul, ol, a {
   /* FONTS */
   --ff-manrope: "Manrope", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
+
+  /* TRANSITIONS */
+  --transition-body: all 2s ease-in-out;
 }
 body {
   font-family: var(--ff-manrope);
