@@ -1,173 +1,82 @@
-.loginContainer{
-    background-color: #1D5C67;
-    height: 100vh;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-}
-h1 {
-    position: absolute;
-    width: 176px;
-    height: 55px;
-    left: 121.75px;
-    top: 42px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 55px;
-    color: #E1E2E2;
+.loginContainer {
+  display: flex;
+  background-color: #1d5c67;
+  min-height: 100vh;
+  width: 100%;
 }
 h2 {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 55px;
-    color: #267A89;
+  font: 700 2.5rem var(--ff-manrope);
+  color: var(--nypd-blue);
+  padding-block-end: 2rem;
 }
 form {
-    border-radius: 16px;
-    width: 50%;
-    height: 80%;
-    background-color: hsl(0, 0%, 96%);
-    margin: auto;
-    padding: 178px 75px;
+  border-radius: 1rem;
+  background-color: var(--faded-white);
+  margin: auto;
+  min-width: 80%;
+  padding: 1rem 1.5rem;
+}
+form input {
+  margin-block-end: 1rem;
 }
 label {
-    color: #267A89;
-    cursor: pointer;
-}
-.inputbox {
-    background-color: #FFFFFF;
-    border: 1px solid #267A89;
-    border-radius: 4px;
-    padding: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  color: var(--nypd-blue);
+  cursor: pointer;
 }
 .inputbox input {
-    border: none;
-    outline: none;
-    background-color: none;
-    width: 126px;
+  border: 1px solid var(--nypd-blue);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-block-start: 0.25rem;
+  min-width: 100%;
 }
-
 .checkbox span {
-    color: rgba(0, 0, 0, 0.5);
-    padding-left: 5px;
-    cursor: pointer;
+  margin-inline-start: 0.3rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
-
 .button {
-    text-align: center;
+  text-align: center;
+  margin-block: 1rem;
 }
 button {
-    padding: 10px 50px;
-    border-radius: 10px;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    background-color: #1D5C67;
-    color: white;
+  border-radius: 10px;
+  padding: 0.6rem 2.5rem;
+  background-color: var(--button-clr);
+  color: white;
 }
 button:hover {
-    background-color: #377681;    
+  background-color: var(--nypd-blue);
 }
 .forgotReset {
-    text-align: center;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #818585;
-    cursor: pointer;
-  }
-  .forgotReset span{
-    color: #1D5C67;
-  }
+  text-align: center;
+  font: 400 1rem var(--ff-manrope);
+  color: var(--grey-clr);
+  cursor: pointer;
+}
+.forgotReset span {
+  padding-inline-start: 0.3rem;
+  font-weight: 600;
+  color: var(--button-clr);
+}
 
-  /*** media query starts here***/
-
-  @media  (min-width: 220px) and (max-width: 280px) {
-    form {
-        width: 90%;
-        height: 68%;
-        padding: 68px 35px;
-    }
-    h1 {
-        left: 70px;
-        top: 32px;
-        font-size: 30px;
-    }
-    .inputbox input {
-        width: 110px;
-    }
-    button {
-        padding: 10px 30px;
-    }
-    
-    
+/*** media query starts here***/
+@media (min-width: 500px) {
+  form {
+    min-width: 70%;
   }
-  @media (min-width: 281px) and (max-width: 375px) {
-    form {
-        width: 80%;
-        height: 68%;
-        padding: 68px 35px;
-    }
-    h1 {
-        left: 105px;
-        top: 32px;
-        font-size: 30px;
-    }
-    .inputbox input {
-        width: 110px;
-    }
-    
+  .button {
+    margin-block: 2rem;
   }
-  @media (min-width: 376px) and (max-width: 414px) {
+}
+@media screen and (min-width: 600px) {
+  form {
+    min-width: 60%;
+    padding: 1.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 900px) {
     form {
-        width: 80%;
-        height: 60%;
-        padding: 68px 35px;
-    }
-    h1 {
-        left: 105px;
+        min-width: 40%;
     }
 }
-@media (min-width: 416px) and (max-width: 580px) {
-    form {
-        width: 80%;
-        height: 68%;
-        padding: 68px 35px;
-    }
-    h1 {
-        left: 50px;
-        font-size: 30px;
-    }
-}
-  @media (min-width: 616px) and (max-width: 912px) {
-    form {
-        width: 80%;
-        height: 58%;
-        padding: 68px 35px;
-    }
-    h1 {
-        left: 80px;
-    }
-  }
-  @media (min-width: 770x) and (max-width: 900px) {
-    form {
-        height: 75%;
-        padding: 68px 35px;
-    }
-    h1 {
-        left: 30px;
-    }
-}
-    @media (min-width: 901px) and (max-width: 1024px) {
-        h1 {
-            left: 50px;
-        }
-    }
-  
