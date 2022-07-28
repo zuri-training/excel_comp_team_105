@@ -8,9 +8,9 @@ import Footer from "./Components/Pages/Footer/footer";
 function App() {
   return (
     <>
-      
-      <br></br>
-      <Footer />
+      <LoginPage/>
+
+
     </>
   );
 }
