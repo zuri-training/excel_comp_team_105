@@ -6,7 +6,7 @@ import Navbar from "./Components/Static-components/Navbar/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
+      <LoginPage/>
     </>
   );
 }
