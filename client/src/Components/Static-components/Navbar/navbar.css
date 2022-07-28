@@ -3,23 +3,21 @@
   background: var(--nypd-blue);
   text-align: left;
   padding: 1rem;
-  max-width: 80vw;
-  position: absolute;
-  top: -100%;
 }
 .nav-links > li,
 .nav-links__cta > li {
   margin-block: 1.5rem;
   cursor: pointer;
+  font-size: .85rem;
 }
 .nav-links__cta > Li {
   border: var(--faded-white) solid 1px;
   text-align: center;
   padding-block: 0.5rem;
   border-radius: 10px;
-  max-width: 50%;
   margin: 1.5rem auto;
   font-weight: 600;
+  max-width: 30%;
 }
 .sign-up {
   background: var(--faded-white);
@@ -30,10 +28,10 @@
     min-width: 100%;
   }
   .nav-links__cta > li {
-    max-width: 30%;
+    max-width: 25%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 690px) {
   .nav-container {
     display: flex;
     align-items: center;
