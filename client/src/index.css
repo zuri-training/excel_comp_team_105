@@ -7,8 +7,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-* {
   margin: 0;
   padding: 0;
 }
@@ -33,7 +31,9 @@ textarea,
 select {
   font: inherit;
 }
-ul, ol, a {
+ul,
+ol,
+a {
   list-style: none;
   text-decoration: none;
   color: inherit;
