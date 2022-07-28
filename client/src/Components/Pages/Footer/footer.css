@@ -1,0 +1,44 @@
+.footer {  
+
+    height: 350px;
+    color: white;
+    background-color: #267A89;
+    padding-top: 5em;
+    padding-bottom: 20em;
+    width: 100%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 180%;
+    display: flex;
+    padding-left: 180px;
+    padding-right: 180px;
+    
+    }
+    
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+ 
+    .footer div{
+
+        text-align: left;
+
+    }
+
+.image{ 
+        flex-grow: 0.2;
+    }
+    .row1{ 
+        flex-grow: 0.15;
+    }
+    .row2{ 
+        flex-grow: 0.15;
+    }
+    .row3{ 
+        flex-grow: 0.15;
+    }
+   

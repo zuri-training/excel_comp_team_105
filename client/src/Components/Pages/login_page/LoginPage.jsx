@@ -1,35 +1,32 @@
 import React from "react";
+import Button from "../../Reuseable components/Button/Button";
+import Input from "../../Reuseable components/Input/Input";
 import "./login_page.css";
 
 const LoginPage = () => {
   return (
-    <div className="login-container" >
-      <div>
-        <p>XcelComp</p>
-      </div>
-      <div>
-        <h1>Login</h1>
-        <form action="">
+    <div>
+      <form>
+        <div>
+          <h1>Login</h1>
+        </div>
+        <div>
+          <Input name="Username" type="text" />
+          <Input name="Password" type="password" />
           <div>
-            <label htmlFor="Username">Username</label>
-            <input type="text" name="Username" placeholder="Shearly Wilson" />
+            <input type="checkbox" name="Remember-me" />
+            <label className="remember-me" htmlFor="Remember-me">
+              Remember Me
+            </label>
           </div>
+        </div>
+        <div>
+          <Button>Log In</Button>
           <div>
-            <label htmlFor="Password">Password</label>
-            <input type="text" name="Password" placeholder="************" />
+            Forgot Password? <span>Reset</span>
           </div>
-          <div>
-            <input type="checkbox" name="" id="" />
-            <span>Remember Me</span>
-          </div>
-          <div>
-            <button type="submit">Log In</button>
-          </div>
-          <div>
-            Forgot Password?<span>Reset</span>
-          </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 };
