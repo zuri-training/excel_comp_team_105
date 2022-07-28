@@ -1,11 +1,11 @@
 import React from "react";
-import { ReactComponent as OfficialLogo } from "./OfficialLogo.svg";
+import OfficialLogo from "./Logo.png"
 import "./logo.css";
 
 const Logo = () => {
   return (
     <div className="logo">
-      <OfficialLogo />
+    <img src={OfficialLogo} alt="Logo" />
     </div>
   );
 };
