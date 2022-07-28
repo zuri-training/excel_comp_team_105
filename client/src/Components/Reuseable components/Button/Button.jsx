@@ -1,12 +1,10 @@
 import React from "react";
 import "./button.css";
 
-const Button = ({ placeholder, name, type, children }) => {
+const Button = ({ type, children }) => {
   return (
     <div className="reuseable-button">
-      <button type={type} placeholder={placeholder} name={name}>
-        {children}
-      </button>
+      <button type={type}>{children}</button>
     </div>
   );
 };
