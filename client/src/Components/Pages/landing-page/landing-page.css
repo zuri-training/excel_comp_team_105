@@ -1,3 +1,8 @@
+.landing-container h1 {
+  color: var(--nypd-blue);
+  font-size: 1.9em;
+  font-family: var(--ff-manrope);
+}
 .landing-cta {
   padding-inline: 1rem;
   font-size: 0.8rem;
@@ -6,23 +11,8 @@
 .landing-cta > * {
   padding-block: 1rem;
 }
-h1 {
-  font-size: 1.9em;
-  color: var(--nypd-blue);
-  font-family: var(--ff-manrope);
-}
-h1 > br {
+.landing-cta h1 > br {
   display: none;
-}
-.cta-text button {
-  margin-block-start: 1.5rem;
-  padding: 0.8rem 2.4rem;
-  background-color: var(--nypd-blue);
-  color: var(--faded-white);
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: 500;
 }
 .cta-images {
   position: relative;
@@ -35,8 +25,56 @@ h1 > br {
   left: 15px;
 }
 .landing-hero {
-  margin-block-start: 2rem;
+  margin-block-start: 3rem;
   padding-inline: 1rem;
   font-size: 0.8rem;
   text-align: center;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  margin-block-end: 3rem;
+}
+.testimonials {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.testimonials .cards {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  margin: auto;
+  padding: 1rem 3rem 3rem 3rem;
+}
+.docs-container {
+  text-align: center;
+  padding-inline: 0.5rem;
+  font-size: 1rem;
+}
+.docs-container h1 {
+  font-size: 1.5rem;
+}
+.docs-container p {
+  font-size: 0.8rem;
+}
+
+.get-started {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.get-started h1 {
+  font-size: 1.3rem;
+  padding-block: 1rem;
+}
+.get-started button {
+  padding-inline: 1rem;
+}
+.view-demo {
+  margin-block: 3rem;
 }

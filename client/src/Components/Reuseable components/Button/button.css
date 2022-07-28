@@ -1,14 +1,13 @@
 .reuseable-button button {
-  display: flex;
-  place-content: center;
-  color: var(--faded-white);
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  padding-block: 1rem;
-  border-radius: 0.7rem;
+  margin-block-start: 1.5rem;
+  padding: 0.8rem 2.4rem;
   background-color: var(--button-clr);
-  cursor: pointer;
+  color: var(--faded-white);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
 }
 .reusable-button button:hover,
 .reusable-button button:focus {

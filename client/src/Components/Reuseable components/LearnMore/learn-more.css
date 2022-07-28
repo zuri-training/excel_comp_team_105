@@ -1,0 +1,67 @@
+.learnmore-container {
+  width: 100%;
+  margin: auto;
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 0.8rem;
+}
+.column-reverse {
+  flex-flow: column-reverse wrap;
+}
+.learnmore-container h1 {
+  color: var(--nypd-blue);
+  text-align: center;
+  font-size: 1.7em;
+}
+.learnmore-link {
+  margin-block-start: 2rem;
+  color: var(--nypd-blue);
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+}
+.learnmore-link .arrow-right {
+  display: inline-block;
+  font-size: 20px;
+}
+.learnmore-image {
+  margin: 0 auto;
+  max-width: 80%;
+}
+@media screen and (min-width: 500px) {
+  .learnmore-container {
+    flex-flow: row nowrap;
+    padding-inline: 2rem;
+  }
+  .column-reverse {
+    flex-flow: row-reverse nowrap;
+  }
+  .learnmore-text {
+    align-self: center;
+    flex-basis: 55%;
+  }
+  .learnmore-text p {
+    text-align: left;
+  }
+  .learnmore-container h1 {
+    text-align: left;
+    padding-block: 0.5rem;
+  }
+  .learnmore-image {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .learnmore-container {
+    padding-inline: 5rem;
+  }
+  .learnmore-text {
+    flex-basis: 40%;
+  }
+  .learnmore-image {
+    max-width: 40%;
+  }
+}
