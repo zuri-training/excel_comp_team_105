@@ -1,0 +1,42 @@
+.landing-cta {
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.landing-cta > * {
+  padding-block: 1rem;
+}
+h1 {
+  font-size: 1.9em;
+  color: var(--nypd-blue);
+  font-family: var(--ff-manrope);
+}
+h1 > br {
+  display: none;
+}
+.cta-text button {
+  margin-block-start: 1.5rem;
+  padding: 0.8rem 2.4rem;
+  background-color: var(--nypd-blue);
+  color: var(--faded-white);
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
+}
+.cta-images {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.cta-images .image-2 {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+.landing-hero {
+  margin-block-start: 2rem;
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}

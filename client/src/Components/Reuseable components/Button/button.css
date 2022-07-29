@@ -1,4 +1,4 @@
-.reusable-button button {
+.reuseable-button button {
   display: flex;
   place-content: center;
   color: var(--faded-white);
