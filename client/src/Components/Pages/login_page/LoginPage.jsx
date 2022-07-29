@@ -11,7 +11,7 @@ const LoginPage = () => {
           <label>
             Username
             <div className="inputbox">
-              <input type="username" placeholder="Shearly Wilson" />
+              <input type="text" placeholder="Shearly Wilson" />
             </div>
           </label>
 

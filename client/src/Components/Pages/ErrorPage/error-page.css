@@ -1,0 +1,14 @@
+.error-page {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.error-page h1 {
+  color: var(--button-clr);
+}
+.error-page a {
+    font-weight: bold;
+    text-decoration: underline;
+}

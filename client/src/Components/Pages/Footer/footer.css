@@ -8,6 +8,15 @@
   font: 200 1rem var(--ff-manrope);
   line-height: 2rem;
 }
+
+.image img {
+  width: 200px;
+  cursor: pointer;
+}
+.image:hover,
+.image:focus {
+  opacity: 0.8;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -24,11 +33,18 @@
 a:hover {
   text-decoration: underline;
 }
-.image img {
-  width: 200px;
-  cursor: pointer;
+.footer p {
+  text-align: center;
+  color: #ffffff;
+  padding-block: 1rem;
 }
-.image:hover,
-.image:focus {
-  opacity: 0.8;
+.footer p > span {
+  display: block;
+  font-weight: 400;
+  cursor: pointer;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+.footer p > span:hover {
+  opacity: 0.7;
 }

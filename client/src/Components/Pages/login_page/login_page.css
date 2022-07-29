@@ -4,22 +4,22 @@
   min-height: 100vh;
   width: 100%;
 }
-h2 {
+.loginContainer h2 {
   font: 700 2.5rem var(--ff-manrope);
   color: var(--nypd-blue);
   padding-block-end: 2rem;
 }
-form {
+.loginContainer form {
   border-radius: 1rem;
   background-color: var(--faded-white);
   margin: auto;
   min-width: 80%;
   padding: 1rem 1.5rem;
 }
-form input {
+.loginContainer form input {
   margin-block-end: 1rem;
 }
-label {
+.loginContainer label {
   color: var(--nypd-blue);
   cursor: pointer;
 }
@@ -39,7 +39,7 @@ label {
   text-align: center;
   margin-block: 1rem;
 }
-button {
+.button button {
   border-radius: 10px;
   padding: 0.6rem 2.5rem;
   background-color: var(--button-clr);
@@ -62,7 +62,7 @@ button:hover {
 
 /*** media query starts here***/
 @media (min-width: 500px) {
-  form {
+  .loginContainer form {
     min-width: 70%;
   }
   .button {
@@ -70,13 +70,13 @@ button:hover {
   }
 }
 @media screen and (min-width: 600px) {
-  form {
+  .loginContainer form {
     min-width: 60%;
     padding: 1.5rem 1.5rem;
   }
 }
 @media screen and (min-width: 900px) {
-    form {
+    .loginContainer form {
         min-width: 40%;
     }
 }
