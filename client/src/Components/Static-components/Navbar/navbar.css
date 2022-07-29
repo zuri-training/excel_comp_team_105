@@ -25,17 +25,13 @@
     width: 16%;
     cursor: pointer;
     height: 10px;
-    /* max-width: 10%; */
-    /* left: 120px;
-    top: 34px; */
     border-radius: 0px; 
     margin: 2px;
     margin-left: 50px;
 
 } 
 
-button {
-    /* padding: 9px 25px; */
+.navbtn {
     margin-right: 125px;
     background-color:hsla(180, 1%, 88%, 1);
     border: 2px;
@@ -46,10 +42,6 @@ button {
     font-size: 14px;
     font-weight: 100;
     width: 130px;
-    /* height: 46px;
-    width: 180px;
-    left: 1440px;
-    top: 49px; */
     border-radius: 0;
 }
 .nav-links a {
@@ -58,16 +50,6 @@ button {
     color: white;
     font-weight: 100;
     padding: 55px ;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* max-width: 433px; */
-    /* letter-spacing: 1px;
-    padding: 17px;
-    border-radius: 20px; */
-    /* height: 32px;
-    width: 433px;
-    left: 529px;
-    top: 56px; */
 }
 .login {
     margin-left: 30px;
