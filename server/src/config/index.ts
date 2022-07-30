@@ -1,13 +1,13 @@
 import dotenv from 'dotenv';
-import {TypeOrmModuleOptions} from '@nestjs/typeorm';
+import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 export const typeormConfig: TypeOrmModuleOptions = {
-    type: 'mysql',
-    host: 'localhost',
-    port: +process.env.DB_PORT || 3030,
-    username: process.env.DB_USERNAME || 'root',
-    password: process.env.DB_PASSWORD || 'root',
-    database: process.env.DB_NAME || 'excel_comp',
-    entities: [__dirname + '/../**/*.entity.ts'],
-    synchronize: true
-}
+  type: 'mysql',
+  host: 'localhost',
+  port: parseInt(process.env.DB_PORT),
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  entities: [__dirname + '/../**/*.entity.ts'],
+  synchronize: true,
+};

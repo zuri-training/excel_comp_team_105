@@ -1,8 +1,7 @@
-import { ShareMode } from "src/enums";
+import { ShareMode } from 'src/enums';
 
 export default interface SharedUser {
-    user_id: number;
-    mode: ShareMode;
-    created_at: number;
-    
+  user_id: number;
+  mode: ShareMode;
+  created_at: number;
 }
