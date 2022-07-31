@@ -47,15 +47,26 @@ body{
     border: none;
     cursor: pointer;
     /* margin-left: 30px; */
-    font-size: 18px;
-    color: #FFFFFF;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 1);
     text-align: left;
     width: 556px;
     height: 40px;
     border-radius: 3px;
     margin-right: 270px;
     /* margin-left: 250px; */
+    display: flex;
+    flex-direction: row;
 }
+.pbtn{
+    margin-top: 10px;
+}
+.iconbtn{
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+}
+
 .dash-image{
     display: flex;
     flex-direction: row;
@@ -92,6 +103,12 @@ body{
     text-align: center;
     padding: 50px;
 }
+.cmsidep4d{
+    /* bottom: 0; */
+    display: flex;
+    margin-top: 380px;
+    color: #1C5B66;
+}
 /* .main{
     margin-left: 300px;  
     padding: 5px;  
@@ -105,12 +122,24 @@ main{
     margin-bottom: 20px;
 }
 .mainbtn{
-    color: hsla(180, 1%, 88%, 1);
-    border: none;
+    /* color: hsla(180, 1%, 88%, 1); */
+    background: #FFFFFF;
+    border: 1px solid #6D6D6D;
+    border-radius: 5px; 
     cursor: pointer;
-    width: 200px;
-    height: 45px;
+    width: 160px;
+    height: 40px;
     margin-bottom: 20px;
+    display: flex;
+    font-size: 12px;
+}
+.mainpbtn{
+    width: 110px;
+    margin-top: 10px;
+}
+.iconbtn{
+    height: 15px;
+    margin-left: 5px;
 }
 .recent{
     margin-bottom: 20px;

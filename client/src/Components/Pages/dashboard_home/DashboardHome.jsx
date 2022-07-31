@@ -6,6 +6,12 @@ import Sheet1 from "./Sheet1.png"
 import Sheet2 from "./Sheet2.png"
 import Sheet3 from "./Sheet3.png"
 import Sheet4 from "./Sheet4.png"
+import { IoIosLogOut } from "react-icons/io"
+import { IoIosSearch } from "react-icons/io"
+import { CgAddR } from "react-icons/cg"
+import { TbFiles } from "react-icons/tb";
+import { BsGrid1X2 } from "react-icons/bs"
+
 
 const DashboardHome = () => {
   return (
@@ -15,19 +21,47 @@ const DashboardHome = () => {
             <Logo />
         </div>
         <ul className="head-list">
-            <button className="dashbtn"> Search</button>
+            <div className='headbtn'>
+            <button className="dashbtn"> 
+            <IoIosSearch  className='iconbtn'/> 
+            <p className='pbtn'>Search</p>
+            </button>
+            </div>
         <div className="dash-image">
             <img src={Image1} alt="Image1" className="image1"/>
             <p className="image1p">Shearly Wilson</p>
         </div>
         </ul>
     </div>
-    <div className="sidebar">
-        <p className='sidebarp'>Saved Files</p>
+    <div className="cmside">
+    <div className='cmsideptags'>
+      <div className='cmsidep3'>
+      <BsGrid1X2 className='tb'/>
+      <p>Dashboard</p>
+      </div>
+      <div className='cmsidepp'>
+      <TbFiles className='tb'/>
+      <p>Saved Files</p>
+      </div>
+      <div className='cmsidep4d'>
+      <IoIosLogOut className='tb'/>
+      <p >Log Out</p>
+      </div>
+      {/* <div className='sidefoot'>
+        <footer>
+          dsjnbdnbfuidnfd
+        </footer>
+      </div> */}
+    </div> 
     </div>
     <main>
         <p className='mainp'> New Project</p>
-        <button className='mainbtn'></button>
+        <div>
+        <button className='mainbtn'>
+            <p className='mainpbtn'>Add New Project</p>
+            <CgAddR  className='iconbtn'/> 
+        </button>
+        </div>
 
         <div>
             <p className='recent'>Recent Files</p>

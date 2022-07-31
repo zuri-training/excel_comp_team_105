@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Manrope", sans-serif;
+}
+
+.npsfhead{
+    display: flex;
+    margin: auto;
+    border-radius: 0px;
+    /* max-width: 1440px; */
+    height: 60px;
+    width: 1440px;
+    background-color: rgba(28, 91, 102, 1);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+}
+.npsflist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer; 
+}
+.npsflogo{
+    width: 10%;
+    cursor: pointer;
+    /* height: 10px; */
+    /* border-radius: 0px;  */
+    margin-bottom: 40px;
+    /* margin: 2px; */
+    margin-left: 40px;
+}
+.dash-image{
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+.nimage1p{
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 10px;
+    line-height: 50px;
+}
+.npsfside{
+    position: fixed;
+    width: 220px;
+    height: 100vh;
+    left: 0px;
+    top: 60px;
+    background-color: #D7F1F5;
+}
+.npsfsidep1{
+    margin: auto;
+    /* font-size: 14px; */
+    /* text-align: center; */
+    /* padding: 50px; */
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 0px 24px 0px 24px;
+    background-color: hsla(189, 56%, 26%, 1);
+    width: 196px;
+    height: 30px;
+    color: #FFFFFF;
+}
+.npsfsidep2{
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+.cmsidep4n{
+    /* bottom: 0; */
+    display: flex;
+    margin-top: 320px;
+    color: #1C5B66;
+}
+.nspfmain{
+    margin-left: 180px;  
+    padding: 100px; 
+}
+.npsfframe{
+    width: 300px;
+    height: 350px;
+    border: 1.5px solid #ccc;
+    /* margin-bottom: 20px; */
+    margin-left: 240px;
+ 
+}
+.mainpp{
+    font-size: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 130px;  
+    line-height: 24px; 
+}
+.file{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 200px;
+    font-size: 10px;
+}
+.fileicon{
+    width: 500px;
+    height: 20px;
+}
