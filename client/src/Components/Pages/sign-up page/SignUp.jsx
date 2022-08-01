@@ -7,10 +7,13 @@ import "./sign-up.css";
 
 // Icon
 import { FcGoogle } from "react-icons/fc";
-import { SiFacebook } from "react-icons/si";
 
 // Firebase
-import { createUser } from "../../../Firebase/firebase.utils";
+import {
+  createUser,
+  signInWithGoogle,
+  GoogleAuthProvider,
+} from "../../../Firebase/firebase.utils";
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -31,8 +34,19 @@ class SignUp extends React.Component {
   handleSubmit = (event) => {
     const { email, password } = this.state;
     event.preventDefault();
-    // createUser(email, password);
-    console.log(email, password);
+    createUser(email, password).then((user) => {
+      console.log(user);
+      alert("Account Created");
+    });
+  };
+  handleGoogleSignUp = async () => {
+    try {
+      const result = await signInWithGoogle();
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+    } catch (error) {
+      const email = error.customData.email;
+      const credential = GoogleAuthProvider.credentialFromError(error);
+    }
   };
   render() {
     return (
@@ -51,8 +65,8 @@ class SignUp extends React.Component {
             />
             <Input
               name="email"
-              type="password"
-              placeholder="shearltwilson@address.com"
+              type="email"
+              placeholder="shearlywilson@address.com"
               handleChange={this.handleChange}
             />
             <Input
@@ -62,10 +76,9 @@ class SignUp extends React.Component {
               handleChange={this.handleChange}
             />
             <div className="checkbox-container">
-              <input type="checkbox" name="Remember-me" />
-              <label className="remember-me" htmlFor="Remember-me">
-                Yes I have read and agreed to the Terms of Service and Privacy
-                Policy.
+              <input type="checkbox" name="remember" id="remember" />
+              <label className="remember-me" htmlFor="remember">
+                I have read and agreed to the Terms
               </label>
             </div>
           </div>
@@ -74,13 +87,9 @@ class SignUp extends React.Component {
             <div>
               Already have an account? <span>Log in</span>
             </div>
-            <div>
+            <div onClick={this.handleGoogleSignUp}>
               <FcGoogle />
               <p>Sign in with Google</p>
-            </div>
-            <div>
-              <SiFacebook />
-              <p>Sign in with Facebook</p>
             </div>
           </div>
         </form>

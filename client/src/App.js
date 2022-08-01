@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import SignUp from "./Components/Pages/sign-up page/SignUp";
-function App() {
+import LoginPage from "./Components/Pages/login_page/LoginPage";
+
+const App = () => {
   return (
     <>
-      <SignUp />
+      <LoginPage />
     </>
   );
-}
+};
 
 export default App;
