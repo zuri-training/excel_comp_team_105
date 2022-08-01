@@ -1,65 +1,55 @@
 import React from "react";
+
 import Input from "../../Reuseable components/Input/Input";
 import Button from "../../Reuseable components/Button/Button";
+
 import "./sign-up.css";
 
+// Icon
 import { FcGoogle } from "react-icons/fc";
 
 const SignUp = () => {
   return (
     <>
-    <div className="loginContainer">
-      <h1 className="logo">XelComp</h1>
-        <form className="form">
-          <div className="welcome">
-            <h2>Welcome</h2>
+      <div className="container_login" >
+        <form>
+          <div className="welcome-text" >
+            <h1>Welcome</h1>
             <p>Create Account</p>
           </div>
-          <div>
-            
-            <label>
-              Full Name
-              <div className="inputbox">
-                <input type="text" placeholder="Shearly Wilson"/>
-              </div>
-            </label>
-
-            <label>
-              Email Address
-              <div className="inputbox">
-                <input type="email" placeholder="shearltwilson@address.com"/>
-              </div>
-            </label>
-
-            <label className="label">
-              Password
-              <div className="inputbox">
-                <input type="Password" placeholder="*********"/>
-              </div>
-            </label>
-            
-            <label className="checkbox">
-              <input type="checkbox" id="TnC" name="TnC"/>
-              <span>Yes I have read and agreed to the Terms</span><br/>
-              <p className="ppolicy">of Service and Privacy
-                Policy.</p>
-            </label>
-            
-
+          <div className="inputs" >
+            <Input name="Full Name" type="text" placeholder="Shearly Wilson" />
+            <Input
+              name="Email"
+              type="email"
+              placeholder="name@address.company"
+            />
+            <Input name="Password" type="password" placeholder="************" />
           </div>
-
-          <div className="crtAccount">
+          <div>
+            <label className="checkbox" htmlFor="Terms">
+              <input type="checkbox" id="Terms" name="Terms" />
+              <span>
+                Yes I have read and agreed to the terms service and privacy
+                policy
+              </span>
+            </label>
+          </div>
+          <div>
             <Button>Create Account</Button>
-            <div className="HaveAnAcc">
-              <span>Already have an account?</span> <a href="LoginPage.jsx">Log in</a>
+            <div>
+              <span>
+                Already have an account?
+                <a href="/login">Log in</a>
+              </span>
             </div>
-            <div className="sgnWitGogle">
-              <FcGoogle className="GoogleLogo"/>
-              <p>sign in with Google</p>
+            <div>
+              <FcGoogle/>
+              <p>Sign Up With Google</p>
             </div>
           </div>
         </form>
-    </div>
+      </div>
     </>
   );
 };
