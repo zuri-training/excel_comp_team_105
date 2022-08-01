@@ -2,11 +2,14 @@ import React from 'react'
 import Logo from '../../Reuseable components/Logo/Logo'
 import "./dashboard-npsf.css"
 import Image1 from "./dashimage1.png"
-import { IoIosLogOut } from "react-icons/io"
+import {BiLogOut} from "react-icons/bi"
+import {BiFolder} from "react-icons/bi"
 import { TbFiles } from "react-icons/tb";
 import { VscFile } from "react-icons/vsc";
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { BsGrid1X2 } from "react-icons/bs"
+
+// Dashboard- New project single file 
 
 const DashboardNpsf = () => {
   return (
@@ -35,11 +38,11 @@ const DashboardNpsf = () => {
       <RiArrowDropDownLine className='dropdownside'/>
       </div>
       <div className='cmsidep3'>
-      <TbFiles className='tb'/>
+      <BiFolder className='tb'/>
       <p >Current Project</p>
       </div>
       <div className='cmsidep4n'>
-      <IoIosLogOut className='tb'/>
+      <BiLogOut className='tb'/>
       <p >Log Out</p>
       </div>
       {/* <div className='sidefoot'>

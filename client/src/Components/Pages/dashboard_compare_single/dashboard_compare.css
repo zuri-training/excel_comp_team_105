@@ -13,7 +13,6 @@ body{
     display: flex;
     margin: auto;
     border-radius: 0px;
-    /* max-width: 1440px; */
     height: 60px;
     width: 1440px;
     background-color: rgba(28, 91, 102, 1);
@@ -33,10 +32,7 @@ body{
 .cmlogo{
     width: 10%;
     cursor: pointer;
-    /* height: 10px; */
-    /* border-radius: 0px;  */
     margin-bottom: 40px;
-    /* margin: 2px; */
     margin-left: 40px;
     margin-top: 15px;
 }
@@ -52,8 +48,6 @@ body{
 }
 .dropdowndash{
     color: hsla(180, 1%, 88%, 1);
-    /* margin-top: 15px;
-    height: 24px; */
     margin: auto;
     width: 25px;
     height: 26px;
@@ -65,12 +59,9 @@ body{
     left: 0px;
     top: 60px;
     border-right: 1px solid #ccc;
-    /* background-color: #D7F1F5; */
 }
 .cmsideptags{
-    /* padding: 50px; */
     font-size: 16px;
-    /* padding: 0px 24px 0px 24px; */
     line-height: 50px;
     color: hsla(180, 2%, 14%, 1);
     margin-top: 30px;
@@ -78,7 +69,6 @@ body{
 }
 .cmsidepp{
     display: flex;
-    /* flex-direction: row; */
 }
 .dropdownside{
     width: 50px;
@@ -88,24 +78,15 @@ body{
 }
 .tb{
     margin-left: 20px;
-    /* margin: auto; */
     margin-right: 10px;
     margin-top: 18px;
 }
 .cmsidep4c{
-    /* bottom: 0; */
     display: flex;
     margin-top: 330px;
     color: #1C5B66;
 }
 .cmsidep3{
-    /* margin: auto; */
-    /* font-size: 14px; */
-    /* text-align: center; */
-    /* padding: 50px; */
-    /* margin-top: 30px; */
-    /* border-radius: 8px; */
-    /* padding: 0px 24px 0px 24px; */
     background-color: hsla(188, 64%, 74%, 1);
     width: 100%;
     height: 50px;
@@ -117,9 +98,6 @@ body{
 .cmsidep2{
     padding: 0px 24px 0px 24px
 }
-/* .sidefoot{
-    bottom: 0;
-} */
 
 .cmmain{
     margin-left: 180px;  
@@ -130,7 +108,6 @@ body{
     width: 310px;
     height: 368px;
     border: 1.5px solid #ccc;
-    /* margin-bottom: 20px; */
     margin-left: 240px;
 }
 .btmp{
@@ -141,24 +118,15 @@ body{
 }
 
 .btncon{
-    
-    /* margin-left: 230px; */
     margin-top: 30px;
-    /* align-items: center; */
 }
 button{
     border-radius: 8px;
     border: none;
-    /* background-color: hsla(189, 56%, 26%, 1); */
     width: 230px;
     height: 38px;
-    /* align-items: center; */
 }
-/* .btn{
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-} */
+
 .btn1{
     margin-left: 150px;
     background-color: hsla(189, 56%, 26%, 1);

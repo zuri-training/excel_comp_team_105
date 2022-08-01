@@ -6,10 +6,10 @@ import Sheet1 from "./Sheet1.png"
 import Sheet2 from "./Sheet2.png"
 import Sheet3 from "./Sheet3.png"
 import Sheet4 from "./Sheet4.png"
-import { IoIosLogOut } from "react-icons/io"
+import {BiLogOut} from "react-icons/bi"
 import { IoIosSearch } from "react-icons/io"
 import { CgAddR } from "react-icons/cg"
-import { TbFiles } from "react-icons/tb";
+import { TbFiles } from "react-icons/tb"
 import { BsGrid1X2 } from "react-icons/bs"
 import { RiArrowDropDownLine } from "react-icons/ri"
 
@@ -46,7 +46,7 @@ const DashboardHome = () => {
       <RiArrowDropDownLine className='dropdownsideh'/>
       </div>
       <div className='cmsidep4d'>
-      <IoIosLogOut className='tb'/>
+      <BiLogOut className='tb'/>
       <p >Log Out</p>
       </div>
     </div> 

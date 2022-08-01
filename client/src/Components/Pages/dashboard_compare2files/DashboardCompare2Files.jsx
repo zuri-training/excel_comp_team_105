@@ -4,7 +4,8 @@ import "./dashboard_compare2files.css"
 import Image1 from "./dashimage1.png"
 import sheet15 from "./sheet15.png"
 import sheet16 from "./sheet16.png"
-import { IoIosLogOut } from "react-icons/io"
+import {BiLogOut} from "react-icons/bi"
+import {BiFolder} from "react-icons/bi"
 import { TbFiles } from "react-icons/tb";
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { BsGrid1X2 } from "react-icons/bs"
@@ -36,18 +37,13 @@ const DashboardCompare2Files = () => {
       <RiArrowDropDownLine className='dropdownside'/>
       </div>
       <div className='cmsidep3'>
-      <TbFiles className='tb'/>
+      <BiFolder className='tb'/>
       <p >Current Project</p>
       </div>
       <div className='cmsidep4'>
-      <IoIosLogOut className='tb'/>
+      <BiLogOut className='tb'/>
       <p >Log Out</p>
       </div>
-      {/* <div className='sidefoot'>
-        <footer>
-          dsjnbdnbfuidnfd
-        </footer>
-      </div> */}
     </div> 
   </div>
 
@@ -66,9 +62,7 @@ const DashboardCompare2Files = () => {
     </div>
     
     <div className='btnconte'>
-    {/* <ul className='btnn'> */}
     <button className='btnne'>Compare Files</button>
-    {/* </ul> */}
     </div>
     
     

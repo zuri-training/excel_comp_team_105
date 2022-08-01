@@ -1,8 +1,8 @@
 import React from 'react'
 import Logo from '../../Reuseable components/Logo/Logo'
-import "./dashboard_hdsf.css"
+import "./dashboard_remdsf.css"
 import Image1 from "./dashimage1.png"
-import Image2 from "./dashhdsf.png"
+import Image2 from "./dashremdsf.png"
 import {BiLogOut} from "react-icons/bi"
 import {BiFolder} from "react-icons/bi"
 import { TbFiles } from "react-icons/tb";
@@ -12,9 +12,9 @@ import { IoCheckboxOutline } from "react-icons/io5"
 import { MdCancelPresentation } from "react-icons/md"
 import { MdCheckBoxOutlineBlank } from "react-icons/md"
 
-// Dashboard - Highlight Duplicates in a single file
+// Dashboard Remove Duplicates in a single file
 
-const DashboardHighlightSingle = () => {
+const DashboardRemoveDupSingle = () => {
   return (
     <div>
         <div className='cmhead'>
@@ -92,4 +92,4 @@ const DashboardHighlightSingle = () => {
   )
 }
 
-export default DashboardHighlightSingle
+export default DashboardRemoveDupSingle
