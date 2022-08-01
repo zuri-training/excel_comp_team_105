@@ -6,7 +6,9 @@ import Button from "../../Reuseable components/Button/Button";
 import "./sign-up.css";
 
 // Icon
-import { FcGoogle } from "react-icons/fc";
+// Icons
+import { AiFillGoogleCircle } from "react-icons/ai";
+import { SiFacebook } from "react-icons/si";
 
 // Firebase
 import {
@@ -51,48 +53,54 @@ class SignUp extends React.Component {
   render() {
     return (
       <>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <h1>Welcome</h1>
-            <p>Create Account</p>
-          </div>
-          <div>
-            <Input
-              name="name"
-              type="text"
-              placeholder="Shearly Wilson"
-              handleChange={this.handleChange}
-            />
-            <Input
-              name="email"
-              type="email"
-              placeholder="shearlywilson@address.com"
-              handleChange={this.handleChange}
-            />
-            <Input
-              name="password"
-              type="password"
-              placeholder="*********"
-              handleChange={this.handleChange}
-            />
-            <div className="checkbox-container">
-              <input type="checkbox" name="remember" id="remember" />
-              <label className="remember-me" htmlFor="remember">
-                I have read and agreed to the Terms
-              </label>
+        <div className="container_login">
+          <form onSubmit={this.handleSubmit}>
+            <div className="welcome-text">
+              <h1>Welcome</h1>
+              <p>Create Account</p>
             </div>
-          </div>
-          <div>
-            <Button>Create Account</Button>
-            <div>
-              Already have an account? <span>Log in</span>
+            <div className="inputs">
+              <Input
+                name="name"
+                type="text"
+                placeholder="Shearly Wilson"
+                handleChange={this.handleChange}
+              />
+              <Input
+                name="email"
+                type="email"
+                placeholder="name@address.company"
+                handleChange={this.handleChange}
+              />
+              <Input
+                name="password"
+                type="password"
+                placeholder="************"
+                handleChange={this.handleChange}
+              />
             </div>
-            <div onClick={this.handleGoogleSignUp}>
-              <FcGoogle />
-              <p>Sign in with Google</p>
+            <div className="checkbox">
+              <input type="checkbox" id="Terms" name="Terms" />
+              <label htmlFor="Terms">Terms of Service</label>
             </div>
-          </div>
-        </form>
+            <div className="button">
+              <Button>Sign Up</Button>
+            </div>
+            <div className="account-login">
+              <span>
+                Already have an account?
+                <a href="/login">Log in</a>
+              </span>
+            </div>
+            <div className="socials">
+              <AiFillGoogleCircle
+                className="google"
+                onClick={this.handleGoogleSignUp}
+              />
+              <SiFacebook />
+            </div>
+          </form>
+        </div>
       </>
     );
   }

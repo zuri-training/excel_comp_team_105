@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
 
-import LoginPage from "./Components/Pages/login_page/LoginPage";
-
+import SignUp from "./Components/Pages/sign-up page/SignUp"
 const App = () => {
   return (
     <>
-      <LoginPage />
+      <SignUp />
     </>
   );
 };

@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
-  onAuthStateChanged
+  onAuthStateChanged,
 } from "firebase/auth";
 
 // Firebase config object
@@ -46,11 +46,12 @@ const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
 
 // Monitor Auth State
 const monitorAuthState = () => {
-  onAuthStateChanged(auth, user => {
-    if(user){}
-    else{}
-  })
-}
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+    } else {
+    }
+  });
+};
 
 //  Exports
 export {
@@ -60,4 +61,5 @@ export {
   signInWithGoogle,
   googleProvider,
   GoogleAuthProvider,
+  monitorAuthState,
 };
