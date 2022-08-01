@@ -1,5 +1,5 @@
-import React from 'react'
-import Logo from '../../Reuseable components/Logo/Logo';
+import React from "react";
+import Logo from "../../Reuseable components/Logo/Logo";
 import "./dashboard_home.css";
 import Image1 from "./dashimage1.png"
 import Sheet1 from "./Sheet1.png"
@@ -47,11 +47,6 @@ const DashboardHome = () => {
       <IoIosLogOut className='tb'/>
       <p >Log Out</p>
       </div>
-      {/* <div className='sidefoot'>
-        <footer>
-          dsjnbdnbfuidnfd
-        </footer>
-      </div> */}
     </div> 
     </div>
     <main>
@@ -84,5 +79,6 @@ const DashboardHome = () => {
   )
 }
 
-export default DashboardHome
 
+
+export default DashboardHome;

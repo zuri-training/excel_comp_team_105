@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: .05fr auto;
+  min-height: 100vh;
+}
+.first {
+  display: grid;
+  grid-template-rows: 50px 50px auto;
+  border-right: 1px solid #ccc;
+  padding: 3rem 10px;
+  gap: 0.5rem;
+  font-family: var(--ff-manrope);
+  font-weight: 400;
+  color: #232424;
+}
+.first > div {
+  display: flex;
+  padding-inline: 1rem;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+  border: 1px solid red;
+}
+div > p {
+    flex-shrink: 0;
+}
+.first .log-out {
+  align-self: end;
+}
+@media screen and (min-width: 600px) {
+  .grid {
+  }
+}
