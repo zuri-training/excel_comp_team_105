@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Manrope", sans-serif;
+}
+.head {
+    display: flex;
+    margin: auto;
+    border-radius: 0px;
+    /* max-width: 1440px; */
+    height: 60px;
+    width: 1440px;
+    background-color: rgba(28, 91, 102, 1);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    /* top: 0px;
+    overflow: hidden; */
+    /* position: fixed; */
+}
+.head-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer; 
+}
+.logodash{
+    width: 10%;
+    cursor: pointer;
+    /* height: 10px; */
+    /* border-radius: 0px;  */
+    margin-bottom: 40px;
+    /* margin: 2px; */
+    margin-left: 40px;
+    margin-top: 15px; 
+}
+.dashbtn{
+    /* margin-right: 505px; */
+    background-color:hsla(180, 1%, 88%, 1);
+    border: none;
+    cursor: pointer;
+    /* margin-left: 30px; */
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 1);
+    text-align: left;
+    width: 556px;
+    height: 40px;
+    border-radius: 3px;
+    margin-right: 270px;
+    /* margin-left: 250px; */
+    display: flex;
+    flex-direction: row;
+}
+.pbtn{
+    margin-top: 10px;
+}
+.iconbtn{
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+}
+
+.dash-image{
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+.image1{
+    height: 48px;
+    width: 48px;
+    left: 11.5px;
+    top: 0px;
+    border-radius: 0px;
+    margin-right: 15px;
+}
+.image1p{
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 10px;
+    line-height: 50px;
+}
+
+.sidebar{
+    /* position: fixed;
+    width: 25%;
+    height: 100vh; */
+    position: fixed;
+    width: 220px;
+    height: 100vh;
+    left: 0px;
+    top: 60px;
+    background-color: #D7F1F5;
+}
+.sidebarp{
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    padding: 50px;
+}
+.cmsidep4d{
+    /* bottom: 0; */
+    display: flex;
+    margin-top: 380px;
+    color: #1C5B66;
+}
+/* .main{
+    margin-left: 300px;  
+    padding: 5px;  
+} */
+main{
+    margin-left: 180px;  
+    padding: 100px;  
+}
+.mainp{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.mainbtn{
+    /* color: hsla(180, 1%, 88%, 1); */
+    background: #FFFFFF;
+    border: 1px solid #6D6D6D;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 12px;
+}
+.mainpbtn{
+    width: 110px;
+    margin-top: 10px;
+}
+.iconbtn{
+    height: 15px;
+    margin-left: 5px;
+}
+.recent{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    'a b'  
+    'c d';
+    max-width: 100px;
+    /* grid-template-rows: 200px; */
+    gap: 30px;
+    /* grid-column-gap: 50px; */
+    /* grid-row-gap: 50px; */
+    
+}
+.frame{
+    width: 450px;
+    height: 260px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    /* margin: auto; */
+    /* padding: 15px 10px; */
+    /* padding: 10px 0px 10px 0px; */
+}
+.sheet1{
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    /* width: 90%;
+    height: 100%; */
+}
+.gridp{
+    font-size: 10px;
+    text-align: center;
+    /* margin-top: 10px; */
+    
+    margin: auto;
+}
