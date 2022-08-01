@@ -11,7 +11,7 @@ import DashboardCompare2Files from "./Components/Pages/dashboard_compare2files/D
 function App() {
   return (
     <>
-      <DashboardCompare2Files />
+      <DashboardNpsf />
 
     </>
   );
