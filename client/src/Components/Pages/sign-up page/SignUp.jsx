@@ -1,9 +1,15 @@
 import React from "react";
+
+// Custom Components
 import Input from "../../Reuseable components/Input/Input";
 import Button from "../../Reuseable components/Button/Button";
 import "./sign-up.css";
 
+// Icon
 import { FcGoogle } from "react-icons/fc";
+
+// Firebase
+import { createUser } from "../../../Firebase/firebase.utils";
 
 const SignUp = () => {
   return (
