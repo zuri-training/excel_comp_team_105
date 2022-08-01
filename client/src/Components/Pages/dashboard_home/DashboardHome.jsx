@@ -11,6 +11,7 @@ import { IoIosSearch } from "react-icons/io"
 import { CgAddR } from "react-icons/cg"
 import { TbFiles } from "react-icons/tb";
 import { BsGrid1X2 } from "react-icons/bs"
+import { RiArrowDropDownLine } from "react-icons/ri"
 
 
 const DashboardHome = () => {
@@ -42,6 +43,7 @@ const DashboardHome = () => {
       <div className='cmsidepp'>
       <TbFiles className='tb'/>
       <p>Saved Files</p>
+      <RiArrowDropDownLine className='dropdownsideh'/>
       </div>
       <div className='cmsidep4d'>
       <IoIosLogOut className='tb'/>

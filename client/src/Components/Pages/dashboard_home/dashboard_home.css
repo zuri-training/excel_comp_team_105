@@ -110,10 +110,12 @@ body{
     margin-top: 380px;
     color: #1C5B66;
 }
-/* .main{
-    margin-left: 300px;  
-    padding: 5px;  
-} */
+.dropdownsideh{
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    color: hsla(180, 2%, 14%, 1);
+}
 main{
     margin-left: 180px;  
     padding: 100px;  
