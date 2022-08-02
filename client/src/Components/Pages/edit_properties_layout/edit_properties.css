@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Manrope", sans-serif;
+}
+.editmain{
+    width: 679px;
+    height: 620px;
+    border-radius: 16px;
+    border: 1px solid #CDCECE;
+    margin-left: 300px;  
+    /* padding: 30px; */
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-top: 1px;
+    /* line-height: 35px; */
+}
+.editmain h3{
+    line-height: 32px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: hsla(189, 56%, 17%, 1);
+}
+.editmain p{
+    color: hsla(180, 2%, 28%, 1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 38px;
+}
+.prop{
+    display: flex;
+    flex-direction: row;
+}
+.propicon{
+    margin-left: 425px;
+    margin-top: 10px;
+
+}
+.propflex{
+    display: flex;
+    /* gap: 200px; */
+}
+.profp1{
+    margin-right: 210px;
+}
+.profp2{
+    margin-right: 209px;
+}
+.profp3{
+    margin-right: 206px;
+}
+.profp4{
+    margin-right: 170px;
+}
+
+.relflex{
+    display: flex;
+    gap: 150px;
+}
+.relp1{
+    margin-right: 30px;
+}
+.prflex{
+    display: flex;
+    /* margin-right: 70px; */
+    /* gap: 186px; */
+} 
+.pr1{
+    margin-right: 186px;
+}
+.pr2{
+    margin-right: 132px;
+}
+.verflex{
+    display: flex;
+    /* gap: 100px; */
+}
+.vr1{
+    margin-right: 174px;
+}
+.vr2{
+    margin-right: 122px;
+}
+.vr3{
+    margin-right: 98px;
+}
+.vr4{
+    margin-right: 80px;
+}
+.editbtn{
+    margin-top: 10px;
+    margin-left: 150px;
+    background: #1D5C67;
+    border-radius: 16px;
+    color: #D7F1F5;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    width: 250px;
+}
