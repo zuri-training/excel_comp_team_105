@@ -10,6 +10,8 @@ import DashsideNav from "../../Static-components/DashsideNav/DashsideNav";
 //  CSS
 import "./dashboard_compare.css";
 
+// Dasboard Compare 
+
 const DashboardCompare = () => {
   return (
     <>

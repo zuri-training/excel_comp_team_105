@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import SignUp from "./Components/Pages/sign-up page/SignUp"
+import DashboardRemoveDupSingle from "./Components/Pages/dashboard_remove_dupl_single/DashboardRemoveDupSingle";
 
-const App = () => {
-  return <>
-  <SignUp />
-  </>;
-};
+function App() {
+  return (
+    <>
+      <DashboardRemoveDupSingle />
+    </>
+  );
+}
 
 export default App;
