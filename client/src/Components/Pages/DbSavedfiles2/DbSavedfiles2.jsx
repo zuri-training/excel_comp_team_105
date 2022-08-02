@@ -26,6 +26,7 @@ const DbSavedfiles2 = () => {
             {/* BELOW IS THE SIDE BAR CODE  */}
 
             <div className="sideBar">
+
                 <div className="savedFile">
                     <AiOutlineFolderOpen className="savedFile-icon"/>
                     <p className="savedFile-name">Saved Files</p>
@@ -34,6 +35,7 @@ const DbSavedfiles2 = () => {
                 <ul className="savedFile-list">
                     <li><a>Timetable.xls</a></li>
                 </ul>
+                
             </div>
 
             {/* Main content starts here */}
