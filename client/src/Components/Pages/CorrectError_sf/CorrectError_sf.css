@@ -108,7 +108,7 @@ margin-top: 10px;
         
       }
     .sidenavbar p.active {
-        background-color: #92DBE7;;
+        background-color: #92DBE7;
         color: white;
       }
 
@@ -116,6 +116,15 @@ margin-top: 10px;
         background-color:#92DBE7;
        
       }
+
+           
+      .currentsidebar p{
+        font-size: 17px;
+        padding: 12px 14px;
+        width: 100%;
+        background-color: #92DBE7;
+      }
+
 
 .Ricon{
     

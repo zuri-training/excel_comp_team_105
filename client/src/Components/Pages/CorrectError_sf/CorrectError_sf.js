@@ -46,7 +46,7 @@ const CorrectError_sf = () => {
       <RiArrowDropDownLine className='dropdownside'/></p>
       </div>
 
-      <div className='sidenavbar'>
+      <div className='currentsidebar'>
       <p><BsFolder className='Ricon'/>
       <a href="/Current Project"> Current Project</a>
       </p>

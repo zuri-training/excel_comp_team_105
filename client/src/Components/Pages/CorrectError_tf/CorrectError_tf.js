@@ -40,7 +40,7 @@ const CorrectError_tf = () => {
       <RiArrowDropDownLine className='dropdownside'/></p>
       </div>
 
-      <div className='sidenav'>
+      <div className='navcurrent'>
       <p><BsFolder className='icons'/>
       <a href="/Current Project"> Current Project</a>
       </p>
