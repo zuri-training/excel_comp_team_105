@@ -1,95 +1,38 @@
-import React from 'react'
-import Logo from '../../Reuseable components/Logo/Logo'
-import "./dashboard_remdsf.css"
-import Image1 from "./dashimage1.png"
-import Image2 from "./dashremdsf.png"
-import {BiLogOut} from "react-icons/bi"
-import {BiFolder} from "react-icons/bi"
-import { TbFiles } from "react-icons/tb";
-import { RiArrowDropDownLine } from "react-icons/ri"
-import { BsGrid1X2 } from "react-icons/bs"
-import { IoCheckboxOutline } from "react-icons/io5"
-import { MdCancelPresentation } from "react-icons/md"
-import { MdCheckBoxOutlineBlank } from "react-icons/md"
+import React from "react";
 
-// Dashboard Remove Duplicates in a single file
+// Image
+import Image2 from "./dashremdsf.png";
 
-const DashboardRemoveDupSingle = () => {
+// Custom Components
+import DashboardNav from "../../Static-components/DashboardNav/DashboardNav";
+import DashsideNavFull from "../../Static-components/DashsideNavFull/DashsideNavFull";
+
+// CSS
+import "./dashboard_remdsf.css";
+// Dashboard Remove Duplicates in a single file and Highlight duplicate in a single file
+
+// note: This components will also be used for highlight duplicates in a single file,
+// it will receive the image prop to render what needs to be shown
+
+const DashboardRemoveDupSingle = ({ image }) => {
   return (
-    <div>
-        <div className='cmhead'>
-    <div className='cmlogo'>
-      <Logo />
-    </div>
-    <ul className='cmlist'>
-    <div className="dash-cm">
-        <img src={Image1} alt="Image1" className="image1"/>
-        <p className="cmimage1p">Shearly Wilson</p>
-        <RiArrowDropDownLine className='dropdowndash'/>
-    </div>
-    </ul>
-  </div>
-  <div className='cmside'>
-    <div className='cmsideptagss'>
-      <div className='cmsidept'>
-      <BsGrid1X2 className='tbt'/>
-      <p>Dashboard</p>
-      </div>
-      <div className='cmsidept'>
-      <TbFiles className='tbt'/>
-      <p>Saved Files</p>
-      <RiArrowDropDownLine className='dropdownsidet'/>
-      </div>
-      <div className='cmsidep3st'>
-      <BiFolder className='tbt'/>
-      <p >Current Project</p>
-      </div>
-      <div className='cmsidept'>
-      <IoCheckboxOutline className='tbt'/>
-      <p>Highlight Duplicates</p>
-      </div>
-      <div className='cmsidept'>
-      <MdCancelPresentation className='tbt'/>
-      <p>Highlight Differences</p>
-      </div>
-      <div className='cmsidept'>
-      <MdCheckBoxOutlineBlank className='tbt'/>
-      <p>Remove Duplicates</p>
-      </div>
-      <div className='cmsidept'>
-      <MdCancelPresentation className='tbt'/>
-      <p>Merge Files</p>
-      </div>
-      <div className='cmsidept'>
-      <MdCheckBoxOutlineBlank className='tbt'/>
-      <p>Edit Properties</p>
-      </div>
-      <div className='cmsidept'>
-      <MdCheckBoxOutlineBlank className='tbt'/>
-      <p>Correct Errors</p>
-      </div>
-      <div className='cmsidep4st'>
-      <BiLogOut className='tbt'/>
-      <p >Log Out</p>
-      </div>
-    </div> 
-  </div>
+    <>
+      <DashboardNav />
+      <DashsideNavFull />
+      <main className="cmmaint">
+        <div>
+          <div className="cmframers">
+            <img src={Image2} alt="sheet1" className="cmframeimg" />
+            <p className="btmp"> Timetable.xls</p>
+          </div>
+          <div className="btns">
+            <button className="btn1">Save File</button>
+            <button className="btn2">Export File</button>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};
 
-  <main className='cmmaint'>
-    <div className='cmframers'>
-    <img src={Image2} alt="sheet1" className="cmframeimg"/>
-    </div>
-    <p className='btmp'> Timetable.xls</p>
-    <div className='btncon'>
-    <ul className='btn'>
-    <button className='bttn1'>Save File</button>
-    <button className='bttn2'>Export File</button>
-    </ul>
-    </div>
-    
-  </main>
-    </div>
-  )
-}
-
-export default DashboardRemoveDupSingle
+export default DashboardRemoveDupSingle;

@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
 
-import DashboardRemoveDupSingle from "./Components/Pages/dashboard_remove_dupl_single/DashboardRemoveDupSingle";
-
+import DashboardRemoveDuplicateSingle from "./Components/Pages/dashboard_remove_dupl_single/DashboardRemoveDupSingle";
 function App() {
   return (
     <>
-      <DashboardRemoveDupSingle />
+      <DashboardRemoveDuplicateSingle />
     </>
   );
 }
