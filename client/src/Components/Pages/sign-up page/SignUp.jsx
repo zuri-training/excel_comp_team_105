@@ -84,7 +84,7 @@ class SignUp extends React.Component {
               <label htmlFor="Terms">Terms of Service</label>
             </div>
             <div className="button">
-              <Button>Sign Up</Button>
+              <Button>Create Account</Button>
             </div>
             <div className="account-login">
               <span>
@@ -92,6 +92,7 @@ class SignUp extends React.Component {
                 <a href="/login">Log in</a>
               </span>
             </div>
+            <p className="socials-para" >Or create account with</p>
             <div className="socials">
               <AiFillGoogleCircle
                 className="google"

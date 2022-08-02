@@ -1,17 +1,19 @@
 .container_login {
   min-height: 100vh;
   width: 100%;
-  background: var(--nypd-blue);
   display: grid;
   place-content: center;
+  text-align: center;
+  padding-block: 2rem;
 }
 .container_login form {
   background: var(--faded-white);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: var(--bx-shadow);
 }
 .welcome-text {
   margin-block: 1rem;
@@ -31,10 +33,11 @@
   max-width: 97%;
 }
 .inputs input:focus {
-  outline: 2px solid var(--nypd-blue);
+  outline: 1px solid var(--nypd-blue);
 }
 .inputs label {
   padding: 0 0 0.3rem 0.1rem;
+  text-align: left;
 }
 .checkbox {
   margin-block-start: 0.8rem;
@@ -69,6 +72,9 @@
   cursor: pointer;
   padding-inline: 0.2rem;
 }
+.socials-para {
+  margin-block-start: 1rem;
+}
 .socials {
   padding-block: 0.5rem;
   text-align: center;
@@ -93,6 +99,9 @@
   }
 }
 @media screen and (min-width: 500px) {
+  .container_login {
+    background: var(--nypd-blue);
+  }
   .container_login form {
     min-width: 70vw;
   }

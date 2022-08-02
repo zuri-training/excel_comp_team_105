@@ -31,7 +31,7 @@
   min-width: 100%;
 }
 .inputbox input:focus {
-  outline: 2px solid var(--nypd-blue);
+  outline: 1px solid var(--nypd-blue);
 }
 .checkbox span {
   margin-inline-start: 0.3rem;
