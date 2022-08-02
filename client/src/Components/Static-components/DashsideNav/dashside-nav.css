@@ -1,8 +1,10 @@
 .dashboard-sidenav {
   position: fixed;
   min-height: 100vh;
-  left: 0px;
+  left: 0;
+  top: 4rem;
   border-right: 2px solid #ccc;
+  font-size: 13px;
 }
 .nav-container {
   display: flex;
@@ -21,9 +23,6 @@
   margin-block-start: 150%;
   color: var(--nypd-blue);
 }
-.big {
-  font-size: 20px;
-}
-.bigger {
-  font-size: 30px;
+.chevron-down {
+  font-size: 25px;
 }

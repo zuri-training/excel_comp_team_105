@@ -17,16 +17,16 @@ const DashsideNav = () => {
             <p>Dashboard</p>
           </div>
           <div className="nav-item">
-            <TbFiles className="big" />
+            <TbFiles />
             <p>Saved Files</p>
-            <RiArrowDropDownLine className="bigger" />
+            <RiArrowDropDownLine className="chevron-down" />
           </div>
           <div className="nav-item">
-            <TbFiles className="big" />
+            <TbFiles />
             <p>Current Project</p>
           </div>
           <div className="nav-item flex-end">
-            <IoIosLogOut className="big" />
+            <IoIosLogOut />
             <p>Log Out</p>
           </div>
         </div>

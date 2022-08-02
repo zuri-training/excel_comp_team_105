@@ -6,6 +6,9 @@
   padding-inline: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .nav-input {
   flex-basis: 50%;
@@ -45,6 +48,6 @@
   }
   .profile-section {
     flex-basis: content;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
