@@ -4,6 +4,30 @@
   min-height: 100vh;
   width: 100%;
 }
+.logo {
+  position: absolute;
+  width: 176px;
+  height: 55px;
+  left: 121.75px;
+  top: 42px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #E1E2E2;
+  cursor: pointer;
+}
+.welcome {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #267A89;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
 h2 {
   font: 700 2.5rem var(--ff-manrope);
   color: var(--nypd-blue);
