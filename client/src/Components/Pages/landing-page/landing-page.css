@@ -1,0 +1,118 @@
+.landing-container h1 {
+  color: var(--nypd-blue);
+  font-size: 1.9em;
+  font-family: var(--ff-manrope);
+}
+.landing-cta {
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+.landing-cta > * {
+  padding-block: 1rem;
+}
+.landing-cta h1 > br {
+  display: none;
+}
+.cta-images {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.cta-images .image-2 {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+.landing-hero {
+  margin-block-start: 3rem;
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  margin-block-end: 3rem;
+}
+.testimonials {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.testimonials .cards {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  margin: auto;
+  padding: 1rem 3rem 3rem 3rem;
+}
+.docs-container {
+  text-align: center;
+  padding-inline: 0.5rem;
+  font-size: 1rem;
+}
+.docs-container h1 {
+  font-size: 1.5rem;
+}
+.docs-container p {
+  font-size: 0.8rem;
+}
+
+.get-started {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.get-started h1 {
+  font-size: 1.3rem;
+  padding-block: 1rem;
+}
+.get-started button {
+  padding-inline: 1rem;
+}
+.view-demo {
+  margin-block: 3rem;
+}
+@media screen and (min-width: 500px) {
+  .landing-cta {
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+    align-items: center;
+  }
+  .cta-text {
+    flex-basis: 50%;
+  }
+  .cta-images {
+    max-width: 45%;
+  }
+  .image-container {
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    padding-inline: 10%;
+  }
+  .image-container > * {
+    max-width: 70%;
+    align-self: center;
+  }
+  .testimonials .cards {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .get-started {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .get-started .get-started__text {
+    flex-basis: 40%;
+    text-align: left;
+  }
+}
