@@ -1,7 +1,12 @@
+.landing-container {
+  background: var(--faded-white);
+  overflow-x: hidden;
+}
 .landing-container h1 {
   color: var(--nypd-blue);
   font-size: 1.9em;
   font-family: var(--ff-manrope);
+  margin-block-end: 1rem;
 }
 .landing-cta {
   padding-inline: 1rem;
@@ -26,7 +31,7 @@
   left: 15px;
 }
 .landing-hero {
-  margin-block-start: 3rem;
+  margin-block-start: 5rem;
   padding-inline: 1rem;
   font-size: 0.8rem;
   text-align: center;
@@ -45,17 +50,17 @@
   text-align: center;
   font-size: 0.8rem;
 }
-.testimonials .cards {
+.testimonials > .cards {
   display: flex;
   flex-flow: column wrap;
   gap: 2rem;
-  margin: auto;
   padding: 1rem 3rem 3rem 3rem;
 }
 .docs-container {
   text-align: center;
   padding-inline: 0.5rem;
   font-size: 1rem;
+  margin-block-start: 5rem;
 }
 .docs-container h1 {
   font-size: 1.5rem;
@@ -68,6 +73,7 @@
   width: 100%;
   margin: auto;
   text-align: center;
+  padding-inline: 2rem;
 }
 .get-started h1 {
   font-size: 1.3rem;
@@ -79,12 +85,16 @@
 .view-demo {
   margin-block: 3rem;
 }
+
 @media screen and (min-width: 500px) {
   .landing-cta {
     display: flex;
-    gap: 1rem;
     text-align: left;
     align-items: center;
+    margin-block: 5rem;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-inline-start: 9%;
   }
   .cta-text {
     flex-basis: 50%;
@@ -98,21 +108,33 @@
     padding-inline: 10%;
   }
   .image-container > * {
-    max-width: 70%;
+    max-width: 50%;
     align-self: center;
   }
-  .testimonials .cards {
+  .testimonials > .cards {
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    min-width: 100vw;
   }
   .get-started {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     padding-block: 3rem;
+  }
+  .get-started p {
+    text-align: center;
   }
   .get-started .get-started__text {
     flex-basis: 40%;
     text-align: left;
+  }
+}
+@media screen and (min-width: 720px) {
+  .cta-text {
+    flex-basis: 30%;
+  }
+  .cta-images {
+    max-width: 35%;
   }
 }

@@ -8,6 +8,7 @@
   border-radius: 5px;
   font-size: 1em;
   font-weight: 500;
+  cursor: pointer;
 }
 .reusable-button button:hover,
 .reusable-button button:focus {

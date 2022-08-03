@@ -11,7 +11,7 @@ const DashsideNav = () => {
   return (
     <>
       <div className="dashboard-sidenav">
-        <div className="nav-container">
+        <div className="snav-container">
           <div className="nav-item">
             <BsGrid1X2 />
             <p>Dashboard</p>

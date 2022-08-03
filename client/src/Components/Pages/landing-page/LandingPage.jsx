@@ -4,7 +4,7 @@ import Card from "../../Reuseable components/Card/Card";
 import LearnMore from "../../Reuseable components/LearnMore/LearnMore";
 import Button from "../../Reuseable components/Button/Button";
 import ViewDemo from "../../Static-components/ViewDemo/ViewDemo";
-import Footer from "../Footer/footer";
+import Footer from "../Footer/Footer";
 import Image1 from "./image 1.png";
 import Image2 from "./image 2.png";
 import Image3 from "./image 3.png";
