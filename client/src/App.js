@@ -2,7 +2,8 @@
 import React from "react";
 // import LandingPage from "./Components/Pages/landing-page/LandingPage";
 import "./App.css";
-import DbSavedfiles2 from "./Components/Pages/DbSavedfiles2/DbSavedfiles2"
+import DashBoardProfile from "./Components/Pages/DashBoardProfile/DashBoardProfile"
+// import DbSavedfiles2 from "./Components/Pages/DbSavedfiles2/DbSavedfiles2"
 // import DashBoardSf from "./Components/Pages/DashBoardSf/DashBoardSf"
 // import LoginPage from "./Components/Pages/login_page/LoginPage";
 // import SignUp from "./Components/Pages/sign-up page/SignUp";
@@ -22,7 +23,8 @@ function App() {
     {/* <SignUp/> */}
     {/* <LoginPage/> */}
     {/* <DashBoardSf/> */}
-    <DbSavedfiles2/>
+    {/* <DbSavedfiles2/> */}
+    <DashBoardProfile/>
 
     </>
   );
