@@ -39,11 +39,11 @@ a:hover {
   color: #ffffff;
   padding-block: 1rem;
 }
-.footer p > span {
+.footer p > a span {
   display: block;
   font-weight: 400;
   cursor: pointer;
-  max-width: fit-content;
+  max-width: min-content;
   margin: 0 auto;
 }
 .footer p > span:hover {

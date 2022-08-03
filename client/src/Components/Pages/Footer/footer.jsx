@@ -1,6 +1,13 @@
 import React from "react";
+
+// Custom Component
 import Logo from "../../Reuseable components/Logo/Logo";
+
+// CSS
 import "./footer.css";
+
+// React router
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -77,7 +84,9 @@ const Footer = () => {
         </div>
         <p>
           Copyright @ 2022-2022
-          <span>Xelcomp</span>
+          <Link to="/">
+            <span>Xelcomp</span>
+          </Link>
         </p>
       </footer>
     </>

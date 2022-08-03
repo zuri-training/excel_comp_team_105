@@ -2,6 +2,7 @@
   display: inline;
   width: 100px;
   max-width: 50%;
+  cursor: pointer;
 }
 .logo img {
   width: 150px;

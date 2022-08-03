@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import SigUp from "./Components/Pages/sign-up page/SignUp";
+import SignUp from "./Components/Pages/sign-up page/SignUp";
 import LoginPage from "./Components/Pages/login_page/LoginPage";
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 import ErrorPage from "./Components/Pages/ErrorPage/ErrorPage";
@@ -13,11 +13,20 @@ import DashboardHome from "./Components/Pages/dashboard_home/DashboardHome";
 import DashboardRemoveDupSingle from "./Components/Pages/dashboard_remove_dupl_single/DashboardRemoveDupSingle";
 import LandingPage from "./Components/Pages/landing-page/LandingPage";
 
+// React router
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <LandingPage />
-    </>
+    <div>
+      <Routes>
+        <Route index element={<LandingPage />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="log-in" element={<LoginPage />} />
+        <Route path="contact-us" element={<ContactUs />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </div>
   );
 }
 

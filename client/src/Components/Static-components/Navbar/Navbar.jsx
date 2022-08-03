@@ -1,6 +1,13 @@
 import React from "react";
-import Logo from "../../Reuseable components/Logo/Logo"
+
+// Custom Components
+import Logo from "../../Reuseable components/Logo/Logo";
+
+// CSS
 import "./navbar.css";
+
+// React router
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,24 +17,24 @@ const Navbar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="/features">Home</a>
+          <Link to="/features">Home</Link>
         </li>
         <li>
-          <a href="/features">Features</a>
+          <Link to="/features">Features</Link>
         </li>
         <li>
-          <a href="/product">Products</a>
+          <Link to="/product">Products</Link>
         </li>
         <li>
-          <a href="/contact-us">About us</a>
+          <Link to="/about-us">About us</Link>
         </li>
       </ul>
       <ul className="nav-links__cta">
         <li>
-          <a href="/login">Login</a>
+          <Link to="/log-in">Login</Link>
         </li>
         <li className="sign-up">
-          <a href="/get-started">Signup</a>
+          <Link to="/sign-up">Signup</Link>
         </li>
       </ul>
     </nav>

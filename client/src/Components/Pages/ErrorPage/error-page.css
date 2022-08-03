@@ -9,6 +9,8 @@
   color: var(--button-clr);
 }
 .error-page a {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--nypd-blue);
+  cursor: pointer;
 }

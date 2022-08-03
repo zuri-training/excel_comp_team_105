@@ -25,7 +25,7 @@
   margin: auto;
   padding: 1rem 1.5rem;
 }
-form input {
+.contact-container form input {
   margin-block-end: 1rem;
 }
 label {
