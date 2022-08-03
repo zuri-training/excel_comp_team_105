@@ -1,4 +1,3 @@
-
 import React from "react";
 //import LandingPage from "./Components/Pages/landing-page/LandingPage";
 import "./App.css";
@@ -11,12 +10,17 @@ import Differences_2files from "./Components/Pages/Differences_2Files/difference
 
 
 
+import "./App.css";
+
+import DashboardRemoveDuplicateSingle from "./Components/Pages/dashboard_remove_dupl_single/DashboardRemoveDupSingle";
 function App() {
   return (
     <>
 
       <Differences_2files />
           
+
+      <DashboardRemoveDuplicateSingle />
     </>
   );
 }

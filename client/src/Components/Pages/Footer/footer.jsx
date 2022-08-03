@@ -12,7 +12,7 @@ const Footer = () => {
         <div class="image">
           <img src={Logo} alt="Logo" />
         </div>
-        <div className="grid-container" >
+        <div className="grid-container">
           <div class="row1">
             <ul>
               <h4>Product</h4>
@@ -78,6 +78,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <p>
+          Copyright @ 2022-2022
+          <span>Xelcomp</span>
+        </p>
       </footer>
     </>
   );

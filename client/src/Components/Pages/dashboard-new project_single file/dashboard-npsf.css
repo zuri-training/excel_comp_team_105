@@ -1,0 +1,25 @@
+.upload-main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  width: 100%;
+  color: #232424;
+  font-size: 12px;
+  text-align: center;
+  gap: 1rem;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 5rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  height: 60vh;
+  width: min(70vw, 300px);
+}
+.file-icon {
+  font-size: 1.5rem;
+  color: #aeadad;
+  cursor: pointer;
+}

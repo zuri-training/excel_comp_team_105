@@ -1,0 +1,53 @@
+.dash-nav {
+  display: flex;
+  width: 100%;
+  background-color: var(--nypd-blue);
+  padding-block: 0.5rem;
+  padding-inline: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav-input {
+  flex-basis: 50%;
+  display: none;
+}
+.nav-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #cdcece;
+}
+.nav-input input::placeholder {
+  color: #fff;
+}
+.profile-section {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--faded-white);
+  align-items: center;
+  place-content: center;
+  flex-basis: 30%;
+}
+.profile-section img {
+  cursor: pointer;
+}
+.profile-section p {
+  flex-shrink: 0;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 500px) {
+  .nav-input {
+    display: block;
+    margin-inline: 1rem;
+  }
+  .profile-section {
+    flex-basis: content;
+    font-size: 0.8rem;
+  }
+}
