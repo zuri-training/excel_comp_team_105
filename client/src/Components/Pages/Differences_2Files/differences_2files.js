@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CorrectError_tf.css";
+import "./differences_2file.css";
 import ProfilePic from "./ProfilePic.png"
 import Logo from '../../Reuseable components/Logo/Logo'
 import { IoIosLogOut } from "react-icons/io"
@@ -9,8 +9,8 @@ import { BsGrid1X2 } from "react-icons/bs"
 import { BsFolder } from "react-icons/bs";
 import { CgCheckR} from "react-icons/cg";
 import { GrCheckbox,} from "react-icons/gr";
-import Correct1 from "./Correct1.png";
-import Correct2 from "./Correct2.png";
+import Differences1 from "./Differences1.png";
+import Differences2 from "./Differences2.png";
 
 const CorrectError_tf = () => {
   return (
@@ -53,7 +53,7 @@ const CorrectError_tf = () => {
       </div>
 
       <div className='sidenav'>
-      <p><GrCheckbox className='icons'/>
+      <p><CgCheckR className='icons'/>
         <a href="/Highlight Differences"> Highlight Differences</a></p>
       </div>
 
@@ -72,7 +72,7 @@ const CorrectError_tf = () => {
       </div>
 
       <div className='sidenav'>
-        <p><CgCheckR className='icons'/>
+        <p><GrCheckbox className='icons'/>
         <a href="/Correct Errors"> Correct Errors</a></p>
       </div>
 
@@ -88,12 +88,12 @@ const CorrectError_tf = () => {
 
         <div className='col1'>
           
-        <img src={Correct1} alt="frame15" className="correct1"/>
+        <img src={Differences1} alt="differences" className="differences1"/>
             <p>Timetable_v1.xls</p>
           </div>
 
            <div className='col2'>
-            <img src={Correct2} alt="frame15" className="correct2"/>
+            <img src={Differences2} alt="differences" className="differences2"/>
             <p>Timetable_v2.xls</p>
            </div>                  
     </main>

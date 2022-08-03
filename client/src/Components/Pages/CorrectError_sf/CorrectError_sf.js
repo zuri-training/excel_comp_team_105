@@ -14,9 +14,6 @@ import { CgCheckR, CgCloseR } from "react-icons/cg";
 import { GrCheckbox,} from "react-icons/gr";
 import Frame15 from "./Frame15.png";
 
-
-
-
 const CorrectError_sf = () => {
   return (
     <div>
@@ -90,23 +87,22 @@ const CorrectError_sf = () => {
       </div>
      
  
-      <main className='container'>
+     
         <div className='colmain'>
+          
           <div className='mainrow'>
            
             <img src={Frame15} alt="frame15" className="frame"/>
             <p>Timetable_v1.xls</p>
-            <div class='submit_button'>
+            
+          </div>
+          
+        </div>
+         
+      <div class='submit_button'>
                 <button type="submit" class='save'>Save File</button>
                 <button type="submit" class='export'>Export FIles</button>
           </div>
-          </div>
-        </div>
-
-       
-      </main>
-     
-      
           
       </div>
   );
