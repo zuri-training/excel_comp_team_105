@@ -8,6 +8,14 @@ import {
   signInWithPopup,
   onAuthStateChanged,
 } from "firebase/auth";
+import {
+  getFirestore,
+  collection,
+  doc,
+  getDoc,
+  setDoc,
+  onSnapshot,
+} from "firebase/firestore";
 
 // Firebase config object
 const firebaseConfig = {
@@ -23,6 +31,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const database = getFirestore(app);
 
 // Project's Auth reference
 const auth = getAuth(app);
@@ -45,12 +54,43 @@ googleProvider.setCustomParameters({
 const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
 
 // Monitor Auth State
-const monitorAuthState = () => {
-  onAuthStateChanged(auth, (user) => {
+const monitorAuthState = (setterFunc) => {
+  const unsub = onAuthStateChanged(auth, (user) => {
     if (user) {
+      const userRef = doc(database, "users", `${user.id}`);
+      onSnapshot(userRef, (docSnap) => {
+        setterFunc({
+          id: docSnap.id,
+          ...docSnap.data(),
+        });
+      });
     } else {
+      setterFunc(user);
     }
   });
+  return unsub;
+};
+
+// Create user document
+const createUserProfileDocument = async (userObj, additionalData) => {
+  if (!userObj) return;
+  const userRef = doc(database, "users", `${userObj.id}`);
+  const userSnap = await getDoc(userRef);
+  if (!userSnap.exists()) {
+    const { displayName, email } = userObj;
+    const createdAt = new Date();
+    try {
+      await setDoc(doc(collection(database, "users", `${userObj.id}`)), {
+        displayName: displayName || additionalData,
+        email,
+        createdAt,
+        ...additionalData,
+      });
+    } catch (error) {
+      console.log("Error creating user", error.message);
+    }
+  }
+  return userRef;
 };
 
 //  Exports
@@ -62,4 +102,5 @@ export {
   googleProvider,
   GoogleAuthProvider,
   monitorAuthState,
+  createUserProfileDocument,
 };

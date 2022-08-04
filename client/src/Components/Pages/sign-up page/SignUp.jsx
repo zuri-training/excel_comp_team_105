@@ -17,6 +17,7 @@ import {
   createUser,
   signInWithGoogle,
   GoogleAuthProvider,
+  createUserProfileDocument,
 } from "../../../Firebase/firebase.utils";
 
 // React router
@@ -33,7 +34,7 @@ const SignUp = () => {
     });
   };
   const handleSubmit = (event) => {
-    const { email, password } = user;
+    const { email, password, name } = user;
     event.preventDefault();
     createUser(email, password)
       .then((user) => {
@@ -43,6 +44,7 @@ const SignUp = () => {
 
           // Define profile route
           setError(false);
+          createUserProfileDocument(user, name);
           navigate("/profile");
         }
       })
@@ -63,7 +65,7 @@ const SignUp = () => {
   return (
     <>
       <div className="container_login">
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="welcome-text">
             <h1>Welcome</h1>
             <p>Create Account</p>
@@ -73,19 +75,19 @@ const SignUp = () => {
               name="name"
               type="text"
               placeholder="Shearly Wilson"
-              handleChange={this.handleChange}
+              handleChange={handleChange}
             />
             <Input
               name="email"
               type="email"
               placeholder="name@address.company"
-              handleChange={this.handleChange}
+              handleChange={handleChange}
             />
             <Input
               name="password"
               type="password"
               placeholder="************"
-              handleChange={this.handleChange}
+              handleChange={handleChange}
             />
           </div>
           <div className="checkbox">
@@ -105,7 +107,7 @@ const SignUp = () => {
           <div className="socials">
             <AiFillGoogleCircle
               className="google"
-              onClick={this.handleGoogleSignUp}
+              onClick={handleGoogleSignUp}
             />
             <SiFacebook />
           </div>
