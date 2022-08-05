@@ -6,31 +6,27 @@
   <a href="https://github.com/github_username/repo_name">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
+</div>
 
 <h3 align="center">XelComp</h3>
 
   <p align="center">
    XelComp is a web app that will enable users to compare the content of an excel file, spot and highlight minor changes and mistakes, and also be able to share and save files online.
+ </p>
 
 <!-- TABLE OF CONTENTS -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-       <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#installation">Installation</a></li></li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#Team">Team</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#Acknowledge">Acknowledge</a></li>
   </ol>
 </details>
 
@@ -39,8 +35,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,9 +66,11 @@ After having a copy of the repository on your local machine.
   cd client && npm install
   ```
   and
+
+* bash
     ```sh
   cd server && npm install
-
+  ```
 
 ### Prerequisites
 <ul>
@@ -93,7 +89,7 @@ To run this project on your local machine, make sure you have:
   ```
 You can get the latest version [here](https://nodejs.org/en/)
 </li>
-<li>A compatible broswer. We recommend Googe Chrome</li>
+<li>A compatible broswer. We recommend Google Chrome</li>
 <li>An IDE. We recommend Visual Studio Code</li>
 </ul>
 
@@ -104,15 +100,21 @@ You can get the latest version [here](https://nodejs.org/en/)
 or
 Download the [zip folder](https://github.com/zuri-training/excel_comp_team_105/archive/refs/heads/main.zip)
 and extract to your local machine.</li>
-<li>* bash
+<li>
+
+* bash
   ```sh
   cd client && npm install
   ```
   and
-    ```sh
-  cd server && npm install</li>
-  <li>
+
   * bash
+    ```sh
+  cd server && npm install
+   ```
+  </li>
+  <li>
+* bash
   ```sh
   cd client && npm run start
   ```
