@@ -24,11 +24,13 @@
     <li><a href="#installation">Installation</a></li></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#Web-App-Features">Web App Features</a></li>
     <li><a href="#Team">Team</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#Acknowledge">Acknowledge</a></li>
   </ol>
 </details>
+
 
 
 
@@ -130,22 +132,24 @@ and extract to your local machine.</li>
 ## Web App Features
 
 Authenticated User:
-
-    1. Full access to the platform.
-    2. Allow users ulpoad excel and csv files.
-    3. Compare their files and also spot mistakes.
-    4. Document their files easily
-    5. Edit complex files quickly
-    6. Quickly identify duplicate in files
-    7. Highlight difference in files
-    8. Show example usage to users
+<ol>
+    <li>1. Full access to the platform.</li>
+    <li>2. Allow users ulpoad excel and csv files.</li>
+    <li>3. Compare their files and also spot mistakes.</li>
+    <li>4. Document their files easily</li>
+    <li>5. Edit complex files quickly</li>
+    <li>6. Quickly identify duplicate in files</li>
+    <li>7. Highlight difference in files</li>
+    <li>8. Show example usage to users</li>
+</ol>
 
 Unauthenticated User:
-
-    1. Visit the platform to view basic information about it
-    2. View and Interact with the documentation
-    3. Register to view more details
-    4. No access to use until registered
+<ol>
+    <li>1. Visit the platform to view basic information about it</li>
+    <li>2. View and Interact with the documentation</li>
+    <li>3. Register to view more details</li>
+    <li>4. No access to use until registered</li>
+</ol>
 
 <!-- TEAM -->
 ## TEAM
@@ -270,6 +274,7 @@ Then, push those changes from your local repository to the "origin" (your fork):
 Congratulations
 You just successfully made a contribution to our repository!!
 
+<!-- ACKNOWLEGEMENT -->
 ## ACKNOWLEGEMENT
 
 Huge thanks to the [Ingressive For Good and Zuri Team](https://training.zuri.team/) for the training and inspiring this project.
