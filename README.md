@@ -3,12 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-</div>
-
-<h3 align="center">XelComp</h3>
+    <img src="https://github.com/zuri-training/excel_comp_team_105/blob/ikenna/client/Frame%20118.png" alt="Logo" width="288" height="52">
+</div><br>
 
   <p align="center">
    XelComp is a web app that will enable users to compare the content of an excel file, spot and highlight minor changes and mistakes, and also be able to share and save files online.
@@ -63,7 +59,7 @@ XelComp is a web app that will enable users to compare the content of an excel f
 ## Getting Started
 After having a copy of the repository on your local machine.
 
- * bash
+* bash
   ```sh
   cd client && npm install
   ```
@@ -85,7 +81,7 @@ To run this project on your local machine, make sure you have:
   ```
   You should get something like this 
 
-  * bash
+* bash
   ```sh
   v17.7.1
   ```
@@ -98,10 +94,11 @@ You can get the latest version [here](https://nodejs.org/en/)
 <!-- USAGE EXAMPLES -->
 ## Usage
 <ol>
-<li>Clone repository [here](https://github.com/zuri-training/excel_comp_team_105.git)
-or
-Download the [zip folder](https://github.com/zuri-training/excel_comp_team_105/archive/refs/heads/main.zip)
-and extract to your local machine.</li>
+<li>Clone repository <a href="https://github.com/zuri-training/excel_comp_team_105.git">here</a>
+<br>or<br>
+Download the zip folder <a href="https://github.com/zuri-training/excel_comp_team_105/archive/refs/heads/main.zip")>here<a/>
+<br>and<br>extract to your local machine.</li>
+
 <li>
 
 * bash
@@ -110,17 +107,19 @@ and extract to your local machine.</li>
   ```
   and
 
-  * bash
+* bash
     ```sh
   cd server && npm install
    ```
-  </li>
-  <li>
+ </li>
+  
+ <li>
+  
 * bash
   ```sh
   cd client && npm run start
   ```
-  </li>
+ </li>
   <li> This will spin up a local server on port 3000</li>
 </ol>
 
@@ -133,46 +132,46 @@ and extract to your local machine.</li>
 
 Authenticated User:
 <ol>
-    <li>1. Full access to the platform.</li>
-    <li>2. Allow users ulpoad excel and csv files.</li>
-    <li>3. Compare their files and also spot mistakes.</li>
-    <li>4. Document their files easily</li>
-    <li>5. Edit complex files quickly</li>
-    <li>6. Quickly identify duplicate in files</li>
-    <li>7. Highlight difference in files</li>
-    <li>8. Show example usage to users</li>
+    <li>Full access to the platform.</li>
+    <li>Allow users ulpoad excel and csv files.</li>
+    <li>Compare their files and also spot mistakes.</li>
+    <li>Document their files easily</li>
+    <li>Edit complex files quickly</li>
+    <li>Quickly identify duplicate in files</li>
+    <li>Highlight difference in files</li>
+    <li>Show example usage to users</li>
 </ol>
 
 Unauthenticated User:
 <ol>
-    <li>1. Visit the platform to view basic information about it</li>
-    <li>2. View and Interact with the documentation</li>
-    <li>3. Register to view more details</li>
-    <li>4. No access to use until registered</li>
+    <li>Visit the platform to view basic information about it</li>
+    <li>View and Interact with the documentation</li>
+    <li>Register to view more details</li>
+    <li>No access to use until registered</li>
 </ol>
 
 <!-- TEAM -->
 ## TEAM
-
-Aderonke Abati - Product Design
-Chiletam Ekewuba - Product Design
-Adaobi - Product Design
-Zinniee - Full Stack
-Faith Ajamah - Product Design
-Ikenna - Full Stack
-Jacqueline - Product Design
-Japhet E - Product Design
-Ebube Okoli - Full Stack
-Master Daniels - Full Stack
-Mwaka - Full Stack
-Ntombi - Product Design
-Baron - Full Stack
-Oluwasunmisola - Product Design
-Chargie - Product Design
-RaeJay - Product Design
-Sirnz - Product Design
-Ucheglory - Product Design
-
+<ol>
+<li>Aderonke Abati - Product Design</li>
+<li>Chiletam Ekewuba - Product Design</li>
+<li>Adaobi - Product Design</li>
+<li>Zinniee - Full Stack</li>
+<li>Faith Ajamah - Product Design</li>
+<li>Ikenna - Full Stack</li>
+<li>Jacqueline - Product Design</li>
+<li>Japhet E - Product Design</li>
+<li>Ebube Okoli - Full Stack</li>
+<li>Master Daniels - Full Stack</li>
+<li>Mwaka - Full Stack</li>
+<li>Ntombi - Product Design</li>
+<li>Baron - Full Stack</li>
+<li>Oluwasunmisola - Product Design</li>
+<li>Chargie - Product Design</li>
+<li>RaeJay - Product Design</li>
+<li>Sirnz - Product Design</li>
+<li>Ucheglory - Product Design</li>
+</ol>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
