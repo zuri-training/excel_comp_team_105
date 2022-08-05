@@ -50,3 +50,8 @@
     gap: 4rem;
   }
 }
+
+/* Hide input */
+input[type="file"] {
+  display: none;
+}

@@ -14,18 +14,39 @@ import { CgAddR } from "react-icons/cg";
 import "./dashboard_home.css";
 
 const DashboardHome = () => {
+  const [file, setFile] = React.useState(null);
+  const [error, setError] = React.useState(null);
+  const handleFileUpload = (e) => {
+    let selected = e.target.files;
+    if (selected) {
+      setFile(selected);
+      setError(null);
+      console.log(selected);
+    } else {
+      setFile(null);
+      setError("Please try again and select a valid file type");
+    }
+  };
   return (
     <>
       <DashboardNav />
       <DashsideNav />
       <main className="main-content">
         <p> New Project</p>
-        <div className="new-project">
-          <p>Add New Project</p>
-          <CgAddR />
-        </div>
+        <label htmlFor="excel">
+          <div className="new-project">
+            <p>Add New Project</p>
+            <CgAddR />
+            <input
+              type="file"
+              name="excel"
+              id="excel"
+              onChange={handleFileUpload}
+            />
+          </div>
+        </label>
         <p>Recent Files</p>
-        <div className="project-grid" >
+        <div className="project-grid">
           <div>
             <img src={Sheet1} alt="sheet1" className="sheet1" />
             <p className="gridp">Timetable.xls</p>

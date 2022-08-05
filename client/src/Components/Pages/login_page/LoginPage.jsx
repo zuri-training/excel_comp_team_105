@@ -26,7 +26,7 @@ const LoginPage = () => {
 
       // Define profile route
       setError(false);
-      navigate("profile");
+      navigate("/dashboard-home");
     } catch (error) {
       const errorCode = error.code;
       const errorMessage = error.message;
@@ -66,7 +66,12 @@ const LoginPage = () => {
           </label>
 
           <label className="checkbox" htmlFor="remember">
-            <input type="checkbox" id="remember" name="remember" />
+            <input
+              style={{ margin: "unset" }}
+              type="checkbox"
+              id="remember"
+              name="remember"
+            />
             <span>Remember me</span>
           </label>
 

@@ -21,7 +21,7 @@ import {
 } from "../../../Firebase/firebase.utils";
 
 // React router
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [user, setUser] = React.useState({ name: "", email: "", password: "" });
@@ -30,6 +30,7 @@ const SignUp = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUser({
+      ...user,
       [name]: value,
     });
   };
@@ -37,15 +38,12 @@ const SignUp = () => {
     const { email, password, name } = user;
     event.preventDefault();
     createUser(email, password)
-      .then((user) => {
-        if (user) {
-          console.log(user);
-          alert("Account Created");
-
-          // Define profile route
+      .then((userObj) => {
+        if (userObj) {
+          // Perform actions
           setError(false);
-          createUserProfileDocument(user, name);
-          navigate("/profile");
+          createUserProfileDocument(userObj.user, name);
+          navigate("/dashboard-home");
         }
       })
       .catch((err) => {
@@ -57,6 +55,11 @@ const SignUp = () => {
     try {
       const result = await signInWithGoogle();
       const credential = GoogleAuthProvider.credentialFromResult(result);
+      if (result) {
+        console.log(result, result.user);
+        createUserProfileDocument(result.user);
+        navigate("/dashboard-home");
+      }
     } catch (error) {
       const email = error.customData.email;
       const credential = GoogleAuthProvider.credentialFromError(error);
@@ -100,7 +103,7 @@ const SignUp = () => {
           <div className="account-login">
             <span>
               Already have an account?
-              <a href="/login">Log in</a>
+              <Link to="/log-in">Log in</Link>
             </span>
           </div>
           <p className="socials-para">Or create account with</p>

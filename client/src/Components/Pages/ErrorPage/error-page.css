@@ -8,9 +8,16 @@
 .error-page h1 {
   color: var(--button-clr);
 }
-.error-page a {
+.error-page a, .error-page p {
   font-weight: bold;
   text-decoration: underline;
   color: var(--nypd-blue);
   cursor: pointer;
+}
+.links-container {
+  display: flex;
+  gap: 2rem;
+  place-content: center;
+  align-items: center;
+  margin-block-start: 1rem;
 }

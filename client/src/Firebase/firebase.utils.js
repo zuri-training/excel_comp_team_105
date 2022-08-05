@@ -39,8 +39,10 @@ const auth = getAuth(app);
 auth.languageCode = "it";
 
 // CreateUserWithEmailAndPassword
-const createUser = (email, password) =>
-  createUserWithEmailAndPassword(auth, email, password);
+const createUser = (email, password) => {
+  console.log(email, password);
+  return createUserWithEmailAndPassword(auth, email, password);
+};
 // Sign In With Email And PAssword
 const signIn = (email, password) =>
   signInWithEmailAndPassword(auth, email, password);
@@ -57,8 +59,10 @@ const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
 const monitorAuthState = (setterFunc) => {
   const unsub = onAuthStateChanged(auth, (user) => {
     if (user) {
-      const userRef = doc(database, "users", `${user.id}`);
+      const userRef = doc(database, "users", `${user.uid}`);
       onSnapshot(userRef, (docSnap) => {
+
+        // console.log(docSnap.id, docSnap.data(), docSnap);
         setterFunc({
           id: docSnap.id,
           ...docSnap.data(),
@@ -74,17 +78,18 @@ const monitorAuthState = (setterFunc) => {
 // Create user document
 const createUserProfileDocument = async (userObj, additionalData) => {
   if (!userObj) return;
-  const userRef = doc(database, "users", `${userObj.id}`);
+  const userRef = doc(database, "users", `${userObj.uid}`);
   const userSnap = await getDoc(userRef);
   if (!userSnap.exists()) {
-    const { displayName, email } = userObj;
+    const { displayName, email, photoURL, uid } = userObj;
     const createdAt = new Date();
     try {
-      await setDoc(doc(collection(database, "users", `${userObj.id}`)), {
-        displayName: displayName || additionalData,
+      await setDoc(doc(database, "users", `${userObj.uid}`), {
+        uid,
+        displayName: displayName || additionalData || "User",
         email,
+        photoURL: photoURL || null,
         createdAt,
-        ...additionalData,
       });
     } catch (error) {
       console.log("Error creating user", error.message);

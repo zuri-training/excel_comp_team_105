@@ -1,8 +1,5 @@
 import React from "react";
 
-// Custom Component
-import Navbar from "../../Static-components/Navbar/Navbar";
-
 // CSS
 import "./error-page.css";
 
@@ -14,13 +11,15 @@ const ErrorPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Navbar />
       <div className="error-page">
         <h1>
           Looks like this webpage <br /> is missing or moved.
         </h1>
-        <a onClick={() => navigate(-1)}>Go back</a>
-        <Link to="/">Go Home</Link>
+        <div className="links-container">
+          <p onClick={() => navigate(-1)}>Go to Previous page</p>
+          <h5>Or</h5>
+          <Link to="/">Go to Homepage</Link>
+        </div>
       </div>
     </>
   );
