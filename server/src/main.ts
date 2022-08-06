@@ -25,6 +25,7 @@ async function bootstrap() {
 
   SwaggerModule.setup('api', app, docs, customOptions);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const options: SwaggerDocumentOptions = {
     deepScanRoutes: true,
   };

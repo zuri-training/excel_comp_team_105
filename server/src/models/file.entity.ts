@@ -9,8 +9,8 @@ import {
   BaseEntity,
 } from 'typeorm';
 import { User } from './user.entity';
-import { FileType } from 'src/enums';
-import SharedUser from 'src/interfaces/shared-user';
+import { FileType } from '../common/enums';
+import SharedUser from '../common/interfaces/shared-user';
 
 @Entity()
 export class File extends BaseEntity {
