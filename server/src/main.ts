@@ -1,3 +1,4 @@
+import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import {
   DocumentBuilder,
@@ -27,7 +28,7 @@ async function bootstrap() {
   const options: SwaggerDocumentOptions = {
     deepScanRoutes: true,
   };
-
+  app.useGlobalPipes(new ValidationPipe());
   await app.listen(8000);
 }
 bootstrap();
