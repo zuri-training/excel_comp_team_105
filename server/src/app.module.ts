@@ -5,12 +5,12 @@ import {
   RequestMethod,
 } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { typeormConfig } from './config';
+import { typeOrmConfig } from './config';
 import { AuthMiddleware } from './auth/auth.middleware';
 import { SharedModule } from './shared/shared.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(typeormConfig), SharedModule],
+  imports: [TypeOrmModule.forRoot(typeOrmConfig), SharedModule],
   controllers: [],
   providers: [],
 })

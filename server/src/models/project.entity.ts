@@ -18,7 +18,7 @@ export class Project extends BaseEntity {
   @Column()
   name: string;
 
-  @ManyToOne((type) => User)
+  @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
   user: User;
 

@@ -29,7 +29,7 @@ export class File extends BaseEntity {
   @Column()
   uri: string;
 
-  @ManyToOne((type) => User)
+  @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
   user: User;
 
