@@ -41,6 +41,7 @@ const DashboardHome = () => {
               name="excel"
               id="excel"
               accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+              multiple
               onChange={handleFileUpload}
             />
           </div>

@@ -18,14 +18,14 @@ import {
 
 // Firebase config object
 const firebaseConfig = {
-  apiKey: "AIzaSyBA2C0MHzEnqtn-N-1XejjzZ7G6Hiw9N10",
-  authDomain: "proj-team-105-xel-comp.firebaseapp.com",
-  databaseURL: "https://proj-team-105-xel-comp-default-rtdb.firebaseio.com",
-  projectId: "proj-team-105-xel-comp",
-  storageBucket: "proj-team-105-xel-comp.appspot.com",
-  messagingSenderId: "75160864797",
-  appId: "1:75160864797:web:58597d83719a6ce6645ef4",
-  measurementId: "G-LXZ5XMJMHR",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASEURL,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 // Initialize Firebase

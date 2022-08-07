@@ -7,16 +7,11 @@ import { TbFiles } from "react-icons/tb";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { BsGrid1X2 } from "react-icons/bs";
 
-// Context
-import { UserContext } from "../../../Contexts/userContext";
-
 // Firebase
 import { auth } from "../../../Firebase/firebase.utils";
 import { signOut } from "firebase/auth";
 
 const DashsideNav = () => {
-  const { currentUser } = React.useContext(UserContext);
-  console.log(currentUser);
   return (
     <>
       <div className="dashboard-sidenav">
