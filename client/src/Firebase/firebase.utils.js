@@ -10,7 +10,6 @@ import {
 } from "firebase/auth";
 import {
   getFirestore,
-  collection,
   doc,
   getDoc,
   setDoc,
@@ -61,7 +60,6 @@ const monitorAuthState = (setterFunc) => {
     if (user) {
       const userRef = doc(database, "users", `${user.uid}`);
       onSnapshot(userRef, (docSnap) => {
-
         // console.log(docSnap.id, docSnap.data(), docSnap);
         setterFunc({
           id: docSnap.id,
