@@ -1,0 +1,41 @@
+.error_container {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    max-width: 1440px;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100%;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 200px;       
+  }
+
+.error_container p {
+font-weight: bold;
+text-decoration: underline;
+}
+
+.error_container p:hover {
+text-decoration-color: #267A89;
+}
+
+.error_container h1 {
+color: #267A89;
+}
+        
+.error_container h1:hover {
+text-decoration-color: black;
+}
+
+
+
+
+
+
+  
+@media screen and (min-width: 500px) {
+    .error_container {
+      padding-inline: 4rem;
+    }
+}
