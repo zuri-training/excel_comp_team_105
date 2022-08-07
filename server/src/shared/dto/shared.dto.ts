@@ -4,21 +4,26 @@ import { IsBoolean, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 export class CreateUserDto {
   @IsNotEmpty()
   @IsString()
+  @ApiProperty({ description: 'username of CreateUser request' })
   username: string;
 
   @IsNotEmpty()
   @IsString()
+  @ApiProperty({ description: 'firstname of CreateUser request' })
   firstname: string;
 
   @IsNotEmpty()
   @IsString()
+  @ApiProperty({ description: 'lastname of CreateUser request' })
   lastname: string;
 
   @IsNotEmpty()
   @IsString()
+  @ApiProperty({ description: 'authentication id of CreateUser request' })
   auth_id: string;
 
   @IsString()
+  @ApiProperty({ description: 'user token of CreateUser request' })
   token: string;
 }
 
