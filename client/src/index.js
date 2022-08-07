@@ -9,14 +9,17 @@ import { BrowserRouter } from "react-router-dom";
 
 // Context
 import { UserProvider } from "./Contexts/userContext";
+import NavProviderComp from "./Contexts/navbarToggleContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <UserProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <NavProviderComp>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </NavProviderComp>
     </UserProvider>
   </React.StrictMode>
 );

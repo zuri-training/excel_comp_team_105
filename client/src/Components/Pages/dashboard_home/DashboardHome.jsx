@@ -20,10 +20,21 @@ const DashboardHome = () => {
   const handleFileUpload = (event) => {
     const fileList = event.target.files;
     if (!fileList) {
-      setError("Error uploading File, pls try again");
+      setError("Error uploading file, pls try again");
     }
     setError(null);
     setFile(fileList);
+    fetch(/*backend api */ "", {
+      // method: POST,
+      body: JSON.stringify({
+        /* fileList */
+      }),
+      headers: {
+        Accept: "application.json",
+        ContentType: "application/json; charset=UTF-8 ",
+      },
+      Cache: "default",
+    });
   };
 
   return (

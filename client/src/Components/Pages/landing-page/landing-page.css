@@ -1,12 +1,24 @@
 .landing-container {
   background: var(--faded-white);
   overflow-x: hidden;
+  position: relative;
 }
 .landing-container h1 {
   color: var(--nypd-blue);
   font-size: 1.9em;
   font-family: var(--ff-manrope);
   margin-block-end: 1rem;
+}
+.hamburger {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: var(--nypd-blue);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.hamburger > * {
+  transition: 500ms ease-in-out;
 }
 .landing-cta {
   padding-inline: 1rem;
