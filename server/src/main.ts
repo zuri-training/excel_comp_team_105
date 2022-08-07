@@ -1,3 +1,4 @@
+import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import {
   DocumentBuilder,
@@ -24,10 +25,11 @@ async function bootstrap() {
 
   SwaggerModule.setup('api', app, docs, customOptions);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const options: SwaggerDocumentOptions = {
     deepScanRoutes: true,
   };
-
+  app.useGlobalPipes(new ValidationPipe());
   await app.listen(8000);
 }
 bootstrap();

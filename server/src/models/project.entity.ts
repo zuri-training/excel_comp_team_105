@@ -6,18 +6,19 @@ import {
   UpdateDateColumn,
   JoinColumn,
   ManyToOne,
+  BaseEntity,
 } from 'typeorm';
 import { User } from './user.entity';
 
 @Entity()
-export class File {
+export class Project extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
   name: string;
 
-  @ManyToOne((type) => User)
+  @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
   user: User;
 

@@ -6,13 +6,14 @@ import {
   UpdateDateColumn,
   JoinColumn,
   ManyToOne,
+  BaseEntity,
 } from 'typeorm';
 import { User } from './user.entity';
-import { FileType } from 'src/enums';
-import SharedUser from 'src/interfaces/shared-user';
+import { FileType } from '../common/enums';
+import SharedUser from '../common/interfaces/shared-user';
 
 @Entity()
-export class File {
+export class File extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -28,7 +29,7 @@ export class File {
   @Column()
   uri: string;
 
-  @ManyToOne((type) => User)
+  @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
   user: User;
 
