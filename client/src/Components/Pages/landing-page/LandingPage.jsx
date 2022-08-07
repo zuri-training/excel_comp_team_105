@@ -59,17 +59,19 @@ const LandingPage = () => {
           <Card />
           <Card />
           <Card />
+          <Card />
         </div>
       </div>
       <div className="docs-container">
-        <div>
+        <div className="docs_text">
           <h1>See what you can do with XelComp</h1>
           <p>Our primary goal is comparison, but you can do lots more!</p>
-          <div>
-            <LearnMore />
-            <LearnMore />
-            <LearnMore />
-          </div>
+        </div>
+        <div>
+          <LearnMore />
+          <LearnMore />
+          <LearnMore />
+          <LearnMore />
         </div>
       </div>
       <div className="get-started">

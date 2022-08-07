@@ -12,7 +12,7 @@
   padding-inline: 1rem;
   font-size: 0.8rem;
   text-align: center;
-  margin-block-start: 2rem;
+  margin-block: 2rem;
 }
 .landing-cta > * {
   padding-block: 1rem;
@@ -42,7 +42,7 @@
   place-content: center;
   padding: 2rem;
   gap: 1rem;
-  margin-block-end: 3rem;
+  margin-block-end: 5rem;
 }
 .testimonials {
   display: grid;
@@ -61,6 +61,11 @@
   padding-inline: 0.5rem;
   font-size: 1rem;
   margin-block-start: 5rem;
+  background: hsl(185, 28%, 83%);
+  border: 1px solid #ccc;
+}
+.docs_text {
+  margin-block: 1rem 3rem;
 }
 .docs-container h1 {
   font-size: 1.5rem;
@@ -101,6 +106,7 @@
   }
   .cta-images {
     max-width: 45%;
+    margin-block-end: 10rem;
   }
   .image-container {
     grid-template-columns: repeat(4, 1fr);

@@ -35,7 +35,7 @@ const SignUp = () => {
     });
   };
   const handleSubmit = (event) => {
-    const { email, password, name } = user;
+    const { name, email, password } = user;
     event.preventDefault();
     createUser(email, password)
       .then((userObj) => {
@@ -48,7 +48,7 @@ const SignUp = () => {
       })
       .catch((err) => {
         setError(true);
-        console.log(err);
+        console.error(err);
       });
   };
   const handleGoogleSignUp = async () => {

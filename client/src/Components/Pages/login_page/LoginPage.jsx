@@ -17,14 +17,15 @@ const LoginPage = () => {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     try {
       const userCreds = await signIn(email, password);
 
-      // Define profile route
+      // send usercreds to backend
+
       setError(false);
       navigate("/dashboard-home");
     } catch (error) {

@@ -16,17 +16,16 @@ import "./dashboard_home.css";
 const DashboardHome = () => {
   const [file, setFile] = React.useState(null);
   const [error, setError] = React.useState(null);
-  const handleFileUpload = (e) => {
-    let selected = e.target.files;
-    if (selected) {
-      setFile(selected);
-      setError(null);
-      console.log(selected);
-    } else {
-      setFile(null);
-      setError("Please try again and select a valid file type");
+
+  const handleFileUpload = (event) => {
+    const fileList = event.target.files;
+    if (!fileList) {
+      setError("Error uploading File, pls try again");
     }
+    setError(null);
+    setFile(fileList);
   };
+
   return (
     <>
       <DashboardNav />
@@ -41,6 +40,7 @@ const DashboardHome = () => {
               type="file"
               name="excel"
               id="excel"
+              accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
               onChange={handleFileUpload}
             />
           </div>
@@ -49,7 +49,7 @@ const DashboardHome = () => {
         <div className="project-grid">
           <div>
             <img src={Sheet1} alt="sheet1" className="sheet1" />
-            <p className="gridp">Timetable.xls</p>
+            <p className="gridp">{file ? file.name : "Timestable.xlsx"}</p>
           </div>
           <div>
             <img src={Sheet2} alt="sheet2" className="sheet1" />

@@ -10,6 +10,10 @@ import { BsGrid1X2 } from "react-icons/bs";
 // Context
 import { UserContext } from "../../../Contexts/userContext";
 
+// Firebase
+import { auth } from "../../../Firebase/firebase.utils";
+import { signOut } from "firebase/auth";
+
 const DashsideNav = () => {
   const { currentUser } = React.useContext(UserContext);
   console.log(currentUser);
@@ -30,7 +34,7 @@ const DashsideNav = () => {
             <TbFiles />
             <p>Current Project</p>
           </div>
-          <div className="nav-item flex-end">
+          <div className="nav-item flex-end" onClick={() => signOut(auth)}>
             <IoIosLogOut />
             <p>Log Out</p>
           </div>
