@@ -6,7 +6,10 @@ import {
   SignInDto,
   SignInSuccessDto,
 } from './dto/shared.dto';
+import * as fs from 'fs';
+import * as XLXS from 'xlsx';
 
+// XLXS.set_fs(fs);
 @Injectable()
 export class SharedService {
   async createUser(data: CreateUserDto): Promise<CreateUserResDto> {
@@ -53,5 +56,11 @@ export class SharedService {
       verified: true,
       token: token,
     };
+  }
+
+  readFiles() {
+    const file = XLXS.readFile(__dirname + '/file/file.xls');
+
+    return file.Sheets.Sheet1;
   }
 }

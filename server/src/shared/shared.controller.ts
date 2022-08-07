@@ -1,4 +1,4 @@
-import { Body, Controller, HttpStatus, Post } from '@nestjs/common';
+import { Body, Controller, Get, HttpStatus, Post } from '@nestjs/common';
 import { ResponseDto } from '../common/dto/global.dto';
 import {
   CreateUserDto,
@@ -36,5 +36,12 @@ export class SharedController {
       message: 'Verified user successfully',
       data: response,
     };
+  }
+
+  @Get('/file')
+  readFile() {
+    const response = this.sharedService.readFiles();
+
+    return response;
   }
 }
