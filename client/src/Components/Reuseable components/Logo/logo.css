@@ -4,3 +4,6 @@
   max-width: 50%;
   cursor: pointer;
 }
+.logo img {
+  max-width: 130px;
+}

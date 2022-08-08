@@ -10,15 +10,11 @@
   margin-block-end: 1rem;
 }
 .hamburger {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: var(--nypd-blue);
   position: absolute;
   right: 1rem;
-  top: 1rem;
-}
-.hamburger > * {
-  transition: 500ms ease-in-out;
+  top: 1.3rem;
+  z-index: 1000;
+  font-size: 1.5rem;
 }
 .landing-cta {
   padding-inline: 1rem;
@@ -106,7 +102,7 @@
   .landing-cta {
     display: flex;
     text-align: left;
-    margin-block-start: 15rem;
+    margin-block-start: 5rem;
     max-width: fit-content;
     margin-inline: auto;
     margin-inline-start: 9%;
@@ -145,6 +141,14 @@
   .get-started .get-started__text {
     flex-basis: 40%;
     text-align: left;
+  }
+}
+@media screen and (min-width: 690px) {
+  .landing-cta {
+    margin-block-start: 10rem;
+  }
+  .hamburger {
+    display: none;
   }
 }
 @media screen and (min-width: 720px) {

@@ -14,30 +14,28 @@ import Image2 from "./image 2.png";
 import Image3 from "./image 3.png";
 import Image4 from "./image 4.png";
 
-// React Icons
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
-
 // CSS
 import "./landing-page.css";
 
 // React router
 import { Link } from "react-router-dom";
 
+// React Icons
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+
 // Contexts
-import { UserContext } from "../../../Contexts/userContext";
 import { NavbarContext } from "../../../Contexts/navbarToggleContext";
 
 const LandingPage = () => {
   const { hidden, setHidden } = React.useContext(NavbarContext);
-  const { currentUser } = React.useContext(UserContext);
 
   return (
     <div className="landing-container">
-      <Navbar />
       <div className="hamburger" onClick={() => setHidden(!hidden)}>
-        {hidden ? <AiOutlineClose /> : <GiHamburgerMenu />}
+        {hidden ? <GiHamburgerMenu /> : <AiOutlineClose />}
       </div>
+      <Navbar />
       <div className="landing-cta">
         <div className="cta-text">
           <h1>

@@ -9,9 +9,12 @@ import "./navbar.css";
 // React router
 import { Link } from "react-router-dom";
 
+import { NavbarContext } from "../../../Contexts/navbarToggleContext";
+
 const Navbar = () => {
+  const { hidden } = React.useContext(NavbarContext);
   return (
-    <nav className="nav-container">
+    <nav className={`${!hidden && "show"} nav-container`}>
       <div className="logo">
         <Logo />
       </div>
