@@ -8,8 +8,6 @@ import "./App.css";
 import Differences_2files from "./Components/Pages/Differences_2Files/differences_2files";
 //import Duplicates_2files from "./Components/Pages/Duplicates_2Files/duplicates_2files";
 
-
-
 import "./App.css";
 
 // Custom Components --Used
@@ -41,16 +39,16 @@ function App() {
     const unsub = monitorAuthState(setCurrentUser);
     return () => unsub();
   }, []);
+  
   return (
-
     <div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/log-in" element={<LoginPage />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="log-in" element={<LoginPage />} />
+        <Route path="contact-us" element={<ContactUs />} />
         <Route
-          path="/dashboard-home"
+          path="dashboard-home"
           element={
             currentUser ? <DashboardHome /> : <Navigate replace to="/" />
           }

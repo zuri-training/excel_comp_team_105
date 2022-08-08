@@ -38,24 +38,19 @@ const auth = getAuth(app);
 auth.languageCode = "it";
 
 // CreateUserWithEmailAndPassword
-const createUser = (email, password) => {
-  console.log(email, password);
-  return createUserWithEmailAndPassword(auth, email, password);
-};
+const createUser = (email, password) =>
+  createUserWithEmailAndPassword(auth, email, password);
 // Sign In With Email And PAssword
 const signIn = (email, password) =>
   signInWithEmailAndPassword(auth, email, password);
 
 // Sign In / Sign Up with Google
 const googleProvider = new GoogleAuthProvider();
-googleProvider.setCustomParameters({
-  login_hint: "user@example.com",
-  prompt: "select_account",
-});
-const signInWithGoogle = () => {
-  console.log("Clicked");
-  return signInWithPopup(auth, googleProvider);
-};
+// googleProvider.setCustomParameters({
+//   login_hint: "user@example.com",
+//   prompt: "select_account",
+// });
+const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
 
 // Monitor Auth State
 const monitorAuthState = (setterFunc) => {
@@ -63,7 +58,6 @@ const monitorAuthState = (setterFunc) => {
     if (user) {
       const userRef = doc(database, "users", `${user.uid}`);
       onSnapshot(userRef, (docSnap) => {
-        // console.log(docSnap.id, docSnap.data(), docSnap);
         setterFunc({
           id: docSnap.id,
           ...docSnap.data(),
@@ -89,7 +83,9 @@ const createUserProfileDocument = async (userObj, additionalData) => {
         uid,
         displayName: displayName || additionalData || "User",
         email,
-        photoURL: photoURL || null,
+        photoURL:
+          photoURL ||
+          "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
         createdAt,
       });
     } catch (error) {

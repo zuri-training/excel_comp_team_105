@@ -23,10 +23,14 @@ import {
 // React router
 import { Link, useNavigate } from "react-router-dom";
 
+// User Context
+import { UserContext } from "../../../Contexts/userContext";
+
 const SignUp = () => {
   const [user, setUser] = React.useState({ name: "", email: "", password: "" });
   const [error, setError] = React.useState(false);
   const navigate = useNavigate();
+  const { setCurrentUser } = React.useContext(UserContext);
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUser({
@@ -56,7 +60,6 @@ const SignUp = () => {
       const result = await signInWithGoogle();
       const credential = GoogleAuthProvider.credentialFromResult(result);
       if (result) {
-        console.log(result, result.user);
         createUserProfileDocument(result.user);
         navigate("/dashboard-home");
       }

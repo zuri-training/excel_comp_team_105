@@ -3,16 +3,24 @@
   width: 100%;
   background-color: var(--nypd-blue);
   padding-block: 0.5rem;
-  padding-inline: 1rem 2rem;
-  justify-content: space-between;
+  padding-inline: 1rem;
   align-items: center;
+  justify-content: space-around;
   position: fixed;
   top: 0;
-  left: 0;
+}
+.logo {
+  margin: 0;
+  padding: 0;
 }
 .nav-input {
   flex-basis: 50%;
   display: none;
+}
+.profile-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 .nav-input input {
   width: 100%;
@@ -49,5 +57,6 @@
   .profile-section {
     flex-basis: content;
     font-size: 0.8rem;
+    gap: 1rem;
   }
 }

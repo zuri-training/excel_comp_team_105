@@ -43,7 +43,6 @@
   left: 15px;
 }
 .landing-hero {
-  margin-block-start: 5rem;
   padding-inline: 1rem;
   font-size: 0.8rem;
   text-align: center;
@@ -107,11 +106,11 @@
   .landing-cta {
     display: flex;
     text-align: left;
-    align-items: center;
-    margin-block: 5rem;
+    margin-block-start: 15rem;
     max-width: fit-content;
     margin-inline: auto;
     margin-inline-start: 9%;
+    align-items: center;
   }
   .cta-text {
     flex-basis: 50%;

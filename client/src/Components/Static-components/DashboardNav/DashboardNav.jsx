@@ -3,9 +3,6 @@ import React from "react";
 // Custom Components
 import Logo from "../../Reuseable components/Logo/Logo";
 
-// Image
-import DashImg from "./dashimage1.png";
-
 // React Icon
 import { BsChevronDown } from "react-icons/bs";
 
@@ -16,9 +13,8 @@ import "./dashboard-nav.css";
 import { UserContext } from "../../../Contexts/userContext";
 
 const DashboardNav = () => {
-  const {
-    currentUser: { displayName, photoURL },
-  } = React.useContext(UserContext);
+  const { currentUser } = React.useContext(UserContext);
+  const { displayName, photoURL } = currentUser;
   return (
     <>
       <div className="dash-nav">
@@ -29,7 +25,7 @@ const DashboardNav = () => {
           <input type="text" placeholder="🔎 Search" />
         </div>
         <div className="profile-section">
-          <img src={photoURL} alt="Dashboard Img" />
+          <img src={photoURL} alt="Dashboard Img" className="profile-img" />
           <p>{displayName}</p>
           <BsChevronDown className="chevron" />
         </div>

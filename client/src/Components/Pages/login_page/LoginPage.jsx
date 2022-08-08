@@ -9,9 +9,12 @@ import { signIn } from "../../../Firebase/firebase.utils";
 // React router
 import { useNavigate } from "react-router-dom";
 
+// user context
+import { UserContext } from "../../../Contexts/userContext";
+
 const LoginPage = () => {
   const [error, setError] = React.useState(false);
-
+  const { setCurrentUser } = React.useContext(UserContext);
   const emailRef = React.createRef();
   const passwordRef = React.createRef();
 
@@ -25,13 +28,13 @@ const LoginPage = () => {
       const userCreds = await signIn(email, password);
 
       // send usercreds to backend
-
       setError(false);
+      setCurrentUser(userCreds);
       navigate("/dashboard-home");
     } catch (error) {
-      // const errorCode = error.code;
-      // const errorMessage = error.message;
-
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
       // Show error message
       setError(true);
     }

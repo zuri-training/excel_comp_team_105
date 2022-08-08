@@ -24,12 +24,14 @@ import "./landing-page.css";
 // React router
 import { Link } from "react-router-dom";
 
-// Navbar Context
+// Contexts
+import { UserContext } from "../../../Contexts/userContext";
 import { NavbarContext } from "../../../Contexts/navbarToggleContext";
 
 const LandingPage = () => {
   const { hidden, setHidden } = React.useContext(NavbarContext);
-  console.log(hidden);
+  const { currentUser } = React.useContext(UserContext);
+
   return (
     <div className="landing-container">
       <Navbar />

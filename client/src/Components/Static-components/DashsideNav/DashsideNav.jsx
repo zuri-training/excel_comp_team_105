@@ -11,7 +11,13 @@ import { BsGrid1X2 } from "react-icons/bs";
 import { auth } from "../../../Firebase/firebase.utils";
 import { signOut } from "firebase/auth";
 
+// User Context
+import { UserContext } from "../../../Contexts/userContext";
+import { useNavigate } from "react-router-dom";
+
 const DashsideNav = () => {
+  const { setCurrentUser } = React.useContext(UserContext);
+  const navigate = useNavigate();
   return (
     <>
       <div className="dashboard-sidenav">
@@ -29,7 +35,16 @@ const DashsideNav = () => {
             <TbFiles />
             <p>Current Project</p>
           </div>
-          <div className="nav-item flex-end" onClick={() => signOut(auth)}>
+          <div
+            className="nav-item flex-end"
+            onClick={() => {
+              signOut(auth)
+                .then(() => setCurrentUser(null))
+                .then(() => {
+                  navigate("/");
+                });
+            }}
+          >
             <IoIosLogOut />
             <p>Log Out</p>
           </div>
