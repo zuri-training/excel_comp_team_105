@@ -1,4 +1,8 @@
-import { Injectable, NestMiddleware } from '@nestjs/common';
+import {
+  Injectable,
+  NestMiddleware,
+  UnauthorizedException,
+} from '@nestjs/common';
 import * as firebase from 'firebase-admin';
 import * as serviceAccount from './firebaseServiceAccount.json';
 
@@ -38,11 +42,11 @@ export class AuthMiddleware implements NestMiddleware {
           req['user'] = user;
           next();
         })
-        .catch((error: any) => {
+        .catch((error) => {
           console.error(error);
         });
     } else {
-      next();
+      throw new UnauthorizedException('User cannot be authorized!');
     }
   }
 }
