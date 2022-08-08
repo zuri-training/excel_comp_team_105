@@ -61,8 +61,8 @@ const SignUp = () => {
         navigate("/dashboard-home");
       }
     } catch (error) {
-      const email = error.customData.email;
-      const credential = GoogleAuthProvider.credentialFromError(error);
+      // const email = error.customData.email;
+      // const credential = GoogleAuthProvider.credentialFromError(error);
     }
   };
   return (
