@@ -18,7 +18,20 @@ Design 20 wireframes - https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-
 
 Design 20 low fidelity screens - https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=1294%3A11990
 
-Design 16 high fidelity screens - https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28683, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28918,https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28872, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29114, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30220,https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30287,https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28747, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28799, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30028, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28972, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29048, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29954, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29605, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29672, https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30103
+Design 16 high fidelity screens - https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28683 https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28918
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28872
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29114
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30220
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30287
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28747
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28799
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30028
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A28972
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29048
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29954
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29605
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29672
+https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30103
 
 Design high fidelity Contact Us page - https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A30355 
 
