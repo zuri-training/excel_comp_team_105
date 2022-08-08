@@ -10,7 +10,7 @@
   margin-block-end: 1rem;
 }
 .hamburger {
-  position: absolute;
+  position: fixed;
   right: 1rem;
   top: 1.3rem;
   z-index: 1000;
