@@ -52,7 +52,10 @@ googleProvider.setCustomParameters({
   login_hint: "user@example.com",
   prompt: "select_account",
 });
-const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
+const signInWithGoogle = () => {
+  console.log("Clicked");
+  return signInWithPopup(auth, googleProvider);
+};
 
 // Monitor Auth State
 const monitorAuthState = (setterFunc) => {

@@ -29,8 +29,8 @@ const LoginPage = () => {
       setError(false);
       navigate("/dashboard-home");
     } catch (error) {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
 
       // Show error message
       setError(true);
