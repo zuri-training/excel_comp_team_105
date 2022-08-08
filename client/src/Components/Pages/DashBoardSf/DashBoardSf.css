@@ -181,7 +181,9 @@
     border: 1px solid #818585;
 }
 
+
 /* Main styling starts below */
+
 
 @media (min-width: 375px) and (max-width: 414px) {
     .header {
