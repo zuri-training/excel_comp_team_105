@@ -1,3 +1,9 @@
+Name: Ntombifuthi Ngobeni
+
+Slack Username: Ntombi
+
+Track: Product Design
+
 Allocation and tracking of team tasks - https://docs.google.com/document/d/1dHUz-HnCQGKCkqhg9lJhkhcsmFQNIx3vFcxS08vkKc4/edit?usp=sharing
 
 User Interview - https://drive.google.com/file/d/1jJu-ZUBkTAIvnRT1tG3GAQyP6giB4-TM/view?usp=sharing - https://drive.google.com/file/d/1Wf1y_6SbVjQSQQt1u-ksgSsYwgYe9SaP/view?usp=sharing
