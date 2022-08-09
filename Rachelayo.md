@@ -1,4 +1,4 @@
-Name: Johnson Rachel Slack Username:RaeJay  Track: Product Desin
+Name: Johnson Rachel              Slack Username:RaeJay           Track: Product Desin
 
 Created Project Proposal - https://docs.google.com/document/d/1WnyZ6PshxDqNl4eAT72Vr1Gt6Qw48CB2/edit?usp=drivesdk&ouid=117791015785349089232&rtpof=true&sd=true	
 
