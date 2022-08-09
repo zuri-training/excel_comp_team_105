@@ -106,10 +106,10 @@
     max-width: fit-content;
     margin-inline: auto;
     margin-inline-start: 9%;
-    align-items: center;
   }
   .cta-text {
     flex-basis: 50%;
+    padding-top: 5rem;
   }
   .cta-images {
     max-width: 45%;
