@@ -32,11 +32,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<h1>Project Definition</h1>
+<h1>PROJECT DEFINITION</h1>
 
 XelComp is a web app that will enable users to compare the content of an excel file, spot and highlight minor changes and mistakes, and also be able to share and save files online.
 
@@ -56,7 +52,7 @@ XelComp is a web app that will enable users to compare the content of an excel f
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## GETTING STARTED
 After having a copy of the repository on your local machine.
 
 * bash
@@ -92,7 +88,7 @@ You can get the latest version [here](https://nodejs.org/en/)
 </ul>
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## USAGE
 <ol>
 <li>Clone repository <a href="https://github.com/zuri-training/excel_comp_team_105.git">here</a>
 <br>or<br>
@@ -128,7 +124,7 @@ Download the zip folder <a href="https://github.com/zuri-training/excel_comp_tea
 
 
 <!-- Web App Features-->
-## Web App Features
+## WEB APP FEATURES
 
 Authenticated User:
 <ol>
