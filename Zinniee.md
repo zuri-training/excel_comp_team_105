@@ -2,18 +2,18 @@ For our team project; Xelcomp, a platform that helps users compare the content o
 
 Below are the links to the pages I worked on:
 
-Dashboard- Home: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_home
+1. Dashboard- Home: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_home
 
-Dashboard- New Project Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard-new%20project_single%20file
+2. Dashboard- New Project Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard-new%20project_single%20file
 
-Dashboard- Compare Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_compare_single
+3. Dashboard- Compare Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_compare_single
 
-Dashboard- Compare 2 Files: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_compare2files
+4. Dashboard- Compare 2 Files: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_compare2files
 
-Dashboard- Highlight Duplicates in a  Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_highlight_duplicates_single_file
+5. Dashboard- Highlight Duplicates in a  Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_highlight_duplicates_single_file
 
-Dashboard- Remove Duplicates In a  Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_remove_dupl_single
+6. Dashboard- Remove Duplicates In a  Single File: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/dashboard_remove_dupl_single
 
-Edit Properties Overlay: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/edit_properties_layout
+7. Edit Properties Overlay: https://github.com/zuri-training/excel_comp_team_105/tree/zinniee/client/src/Components/Pages/edit_properties_layout
 
 Thank You Ingressive4Good + Zuri Team
