@@ -1,0 +1,732 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1D5C67;
+}
+.logo-image {
+    color: white;
+    cursor: pointer;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 656px;
+    padding: 12px;
+    background-color: #B4B6B6;
+    border-radius: 4px;
+}
+.search-icon {
+    color: #FFFFFF;
+    font-size: 19px;
+    cursor: pointer;
+}
+.inputbox {
+    border: none;
+    outline: none;
+    background-color:  #B4B6B6;
+}
+.inputbox::placeholder {
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.image1 {
+    width: 48px;
+    height: 48px;
+}
+.userDP {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.the-user {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/* Styling below is for the side bar */
+
+.side-bar {
+    margin: 0;
+    padding: 24px;
+    width: 220px;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    height: 100%;
+    background: #D7F1F5;
+}
+.saved-files {
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 14px;
+    height: 35px;
+    background: #1D5C67;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.saved-file-list {
+    padding: 10px 24px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.saved-file-list li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.saved-file-list li:hover {
+    background-color: #1D5C67;
+    color: white;
+    border-radius: 5px;
+}
+.saved-file-list li:active {
+    background: #D7F1F5;
+}
+.saved-file-list li a:active {
+    color: black;
+}
+
+  /* Main styling starts below */
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 10em auto;
+}
+.main-content {
+    display: grid;
+    grid-template-areas:
+    "column1 column2"
+    "column3 column4";
+}
+.file-headline {
+    color: #000000;
+    cursor: pointer;
+    margin: 0 20px;
+    width: 15%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+}
+.file-headline:hover {
+    border: 1px solid #818585;
+}
+.column1 {
+    padding: 10px;
+    border: 1px solid #818585;
+    grid-area: column1;
+    text-align: center;
+}
+.column2 {
+    padding: 10px;
+    border: 1px solid #818585;
+    grid-area: column2;
+    text-align: center;
+}
+.column3 {
+    padding: 10px;
+    border: 1px solid #818585;
+    grid-area: column3;
+    text-align: center;
+}
+.column4 {
+    padding: 10px;
+    border: 1px solid #818585;
+    grid-area: column4;
+    text-align: center;
+}
+.column1, .column2, .column3, .column4 {
+    margin: 20px;
+}
+.file-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+}
+.file-name:hover {
+    text-decoration: underline;
+}
+.column-image {
+    width: 400px;
+    height: 192px;
+    cursor: pointer;
+}
+.column-image:hover {
+    border: 1px solid #818585;
+}
+
+
+/* Main styling starts below */
+
+
+@media (min-width: 375px) and (max-width: 414px) {
+    .header {
+        width: 100%;
+        padding: 2px;
+        position: fixed;
+        top: 0;
+    }
+    .logo-image {
+        width: 90px;
+    }
+    .search-bar {
+        gap: 9px;
+        width: 136px;
+        padding: 3px;
+    }
+    .search-icon {
+        font-size: 15px;
+    }
+    .inputbox {
+        width: 86px;
+    }
+    .inputbox::placeholder {
+        font-size: 15px;
+    }
+    .image1 {
+        width: 38px;
+        height: 38px;
+    }
+    .userDP {
+        gap: 5px;
+    }
+    .the-user {
+        font-size: 12px;
+    }
+    .side-bar {
+        position: fixed;
+        top: 42.57px;
+        padding: 10px;
+        width: 100px;
+        height: 100%;
+    }
+    .saved-files {
+        padding: 2px;
+        margin-top: 15px;
+        gap: 4px;
+        height:27px;
+        font-size: 11px;
+    }
+    .saved-file-list {
+        padding: 10px 2px;
+    }
+    .saved-file-list li {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .main {
+        width: 72%;
+        margin-left: 100px;
+        margin-top: 5em;
+    }
+    .main-content {
+        display: grid;
+        grid-template-areas:
+        "column1"
+        "column2"
+        "column3"
+        "column4";
+    }
+    .column-image {
+        width: 300px;
+        height: 152px;
+    }
+    .file-headline {
+        color: #000000;
+        cursor: pointer;
+        margin: 0 20px;
+        width: 17%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;    
+    }
+}
+@media (max-width: 374px) {
+    .header {
+        width: 100%;
+        padding: 2px;
+        position: fixed;
+        top: 0;
+    }
+    .logo-image {
+        width: 90px;
+    }
+    .search-bar {
+        gap: 9px;
+        width: 136px;
+        padding: 3px;
+    }
+    .search-icon {
+        font-size: 15px;
+    }
+    .inputbox {
+        width: 86px;
+    }
+    .inputbox::placeholder {
+        font-size: 15px;
+    }
+    .image1 {
+        width: 38px;
+        height: 38px;
+    }
+    .userDP {
+        gap: 5px;
+    }
+    .the-user {
+        font-size: 12px;
+    }
+    .side-bar {
+        position: fixed;
+        top: 42.57px;
+        padding: 10px;
+        width: 100px;
+        height: 100%;
+    }
+    .saved-files {
+        padding: 2px;
+        margin-top: 15px;
+        gap: 4px;
+        height:27px;
+        font-size: 11px;
+    }
+    .saved-file-list {
+        padding: 10px 2px;
+    }
+    .saved-file-list li {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .main {
+        width: 72%;
+        margin-left: 100px;
+        margin-top: 5em;
+    }
+    .main-content {
+        display: grid;
+        grid-template-areas:
+        "column1"
+        "column2"
+        "column3"
+        "column4";
+    }
+    .column-image {
+        width: 300px;
+        height: 152px;
+    }
+    .file-headline {
+        color: #000000;
+        cursor: pointer;
+        margin: 0 20px;
+        width: 17%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 921px){
+    .header {
+        width: 100%;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+    }
+    .logo-image {
+        width: 130px;
+    }
+    .search-bar {
+        gap: 9px;
+        width: 306px;
+        padding: 5px;
+    }
+    .search-icon {
+        font-size: 19px;
+    }
+    .inputbox {
+        width: 96px;
+    }
+    .inputbox::placeholder {
+        font-size: 18px;
+    }
+    .image1 {
+        width: 48px;
+        height: 48px;
+    }
+    .userDP {
+        gap: 5px;
+    }
+    .the-user {
+        font-size: 15px;
+    }
+    .side-bar {
+        position: fixed;
+        top: 68px;
+        padding: 10px;
+        width: 200px;
+        height: 100%;
+    }
+    .saved-files {
+        padding: 10px;
+        margin-top: 25px;
+        gap: 9px;
+        height: 37px;
+        font-size: 15px;
+    }
+    .saved-file-list {
+        padding: 10px 10px;
+    }
+    .saved-file-list li {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .main {
+        width: 59%;
+        margin-left: 240px;
+        margin-top: 8em;
+    }
+    .main-content {
+        display: grid;
+        grid-template-areas:
+        "column1"
+        "column2"
+        "column3"
+        "column4";
+    }
+    .column-image {
+        width: 350px;
+        height: 172px;
+    }
+    .file-headline {
+        margin: 0 20px;
+        width: 17%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;    
+    }
+}
+@media (min-width: 415px) and (max-width: 495px) {
+    .header {
+        width: 100%;
+        padding: 5px;
+        position: fixed;
+        top: 0;
+    }
+    .logo-image {
+        width: 100px;
+    }
+    .search-bar {
+        gap: 9px;
+        width: 180px;
+        padding: 3px;
+    }
+    .search-icon {
+        font-size: 17px;
+    }
+    .inputbox {
+        width: 86px;
+    }
+    .inputbox::placeholder {
+        font-size: 16px;
+    }
+    .image1 {
+        width: 38px;
+        height: 38px;
+    }
+    .userDP {
+        gap: 5px;
+    }
+    .the-user {
+        font-size: 12px;
+    }
+    .side-bar {
+        position: fixed;
+        top: 48px;
+        padding: 10px;
+        width: 170px;
+        height: 100%;
+    }
+    .saved-files {
+        padding: 10px;
+        margin-top: 25px;
+        gap: 9px;
+        height: 37px;
+        font-size: 13px;
+    }
+    .saved-file-list {
+        padding: 10px 10px;
+    }
+    .saved-file-list li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .main {
+        width: 59%;
+        margin-left: 180px;
+        margin-top: 6em;
+    }
+    .main-content {
+        display: grid;
+        grid-template-areas:
+        "column1"
+        "column2"
+        "column3"
+        "column4";
+    }
+    .column-image {
+        width: 300px;
+        height: 152px;
+    }
+    .file-headline {
+        margin: 0 20px;
+        width: 25%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;    
+    }
+}
+
+@media (min-width: 922px) and (max-width: 1151px){
+    .header {
+        width: 100%;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+    }
+     .logo-image {
+        width: 230px;
+    }
+    .search-bar {
+        gap: 9px;
+        width: 456px;
+        padding: 9px;
+    }
+    .search-icon {
+        font-size: 19px;
+    }
+    .inputbox::placeholder {
+        font-size: 18px;
+    }
+    .side-bar {
+        position: fixed;
+        top: 69px;
+        padding: 10px;
+        width: 230px;
+        height: 100%;
+    }
+    .saved-files {
+        padding: 20px;
+        margin-top: 25px;
+        gap: 9px;
+        height: 37px;
+        font-size: 15px;
+    }
+    .main {
+        width: 65%;
+        margin-left: 270px;
+        margin-top: 8em;
+    }
+    .column-image {
+        width: 350px;
+        height: 172px;
+    }
+}
+@media (min-width: 496px) and (max-width: 767px) {
+        .header {
+            width: 100%;
+            padding: 5px;
+            position: fixed;
+            top: 0;
+        }
+        .logo-image {
+            width: 100px;
+        }
+        .search-bar {
+            gap: 9px;
+            width: 180px;
+            padding: 3px;
+        }
+        .search-icon {
+            font-size: 17px;
+        }
+        .inputbox {
+            width: 86px;
+        }
+        .inputbox::placeholder {
+            font-size: 16px;
+        }
+        .image1 {
+            width: 38px;
+            height: 38px;
+        }
+        .userDP {
+            gap: 5px;
+        }
+        .the-user {
+            font-size: 12px;
+        }
+        .side-bar {
+            position: fixed;
+            top: 48px;
+            padding: 10px;
+            width: 170px;
+            height: 100%;
+        }
+        .saved-files {
+            padding: 10px;
+            margin-top: 25px;
+            gap: 9px;
+            height: 37px;
+            font-size: 13px;
+        }
+        .saved-file-list {
+            padding: 10px 10px;
+        }
+        .saved-file-list li {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .main {
+            width: 59%;
+            margin-left: 180px;
+            margin-top: 6em;
+        }
+        .main-content {
+            display: grid;
+            grid-template-areas:
+            "column1"
+            "column2"
+            "column3"
+            "column4";
+        }
+        .column-image {
+            width: 300px;
+            height: 152px;
+        }
+        .file-headline {
+            margin: 0 20px;
+            width: 25%;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;    
+        }
+}
+@media (min-width: 1151px) and (max-width: 1280px){
+    .main {
+        width: 65%;
+        margin-left: 270px;
+        margin-top: 5em;
+    }
+    .column-image {
+        width: 350px;
+        height: 172px;
+    }
+}
+@media (min-width: 241px)  and (max-width: 353px){
+    .header {
+        width: 100%;
+        padding: 2px;
+        position: fixed;
+        top: 0;
+    }
+    .logo-image {
+        width: 60px;
+    }
+    .search-bar {
+        gap: 4px;
+        width: 100px;
+        padding: 1px;
+    }
+    .search-icon {
+        font-size: 12px;
+    }
+    .inputbox {
+        width: 65px;
+    }
+    .inputbox::placeholder {
+        font-size: 13px;
+    }
+    .image1 {
+        width: 28px;
+        height: 35px;
+    }
+    .userDP {
+        gap: 5px;
+    }
+    .the-user {
+        font-size: 9px;
+    }
+    .side-bar {
+        position: fixed;
+        top: 40px;
+        padding: 8px;
+        width: 100px;
+        height: 100%;
+    }
+    .saved-files {
+        padding: 2px;
+        margin-top: 15px;
+        gap: 4px;
+        height:27px;
+        font-size: 11px;
+    }
+    .saved-file-list {
+        padding: 10px 2px;
+    }
+    .saved-file-list li {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    .main {
+        width: 68%;
+        margin-left: 90px;
+        margin-top: 4em;
+    }
+    .main-content {
+        display: grid;
+        grid-template-areas:
+        "column1"
+        "column2"
+        "column3"
+        "column4";
+    }
+    .column-image {
+        width: 200px;
+        height: 112px;
+    }
+    .file-headline {
+        margin: 0 20px;
+        width: 33%;
+        font-size: 14px;    
+    }
+}

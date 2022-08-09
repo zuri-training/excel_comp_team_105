@@ -1,0 +1,58 @@
+.nav-container {
+  color: var(--faded-white);
+  background: var(--nypd-blue);
+  text-align: left;
+  padding: 1rem;
+}
+.nav-links > li,
+.nav-links__cta > li {
+  margin-block: 1.5rem;
+  cursor: pointer;
+  font-size: .85rem;
+}
+.nav-links__cta > Li {
+  border: var(--faded-white) solid 1px;
+  text-align: center;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  font-weight: 600;
+  max-width: 30%;
+}
+.sign-up {
+  background: var(--faded-white);
+  color: var(--nypd-blue);
+}
+@media screen and (min-width: 500px) {
+  .nav-container {
+    min-width: 100%;
+  }
+  .nav-links__cta > li {
+    max-width: 25%;
+  }
+}
+@media screen and (min-width: 690px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+
+  .nav-links__cta > li {
+    max-width: unset;
+    padding: 0.4rem 1rem;
+  }
+  .nav-links,
+  .nav-links__cta {
+    display: flex;
+    gap: clamp(2rem, 0.2rem, 2.5rem);
+    align-items: center;
+  }
+  .nav-links {
+    flex-shrink: 0;
+  }
+  .nav-links__cta {
+    gap: 0.5rem;
+  }
+}
