@@ -1,3 +1,11 @@
+Name: Azeez Sanusi
+
+Slack Username: Sirnz
+
+Track: Product Design
+
+Task Assigned:
+
 Research plan
 
 https://docs.google.com/document/d/1ObLJcuOULZm4-QesFSiyeUa4pVLF9zIIQLzfyWWVGUU/edit?usp=sharing
@@ -21,3 +29,6 @@ https://www.figma.com/file/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A292
 Prototyping
 
 https://www.figma.com/proto/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29239&scaling=scale-down&page-id=55%3A76&starting-point-node-id=713%3A29239
+
+Issues resolved: Primary and Secondary Buttons with Icons
+Solution: Fixing all Icons in the Buttons by making all variants belong to a uniform parent component
