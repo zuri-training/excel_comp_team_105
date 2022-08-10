@@ -1,18 +1,14 @@
 import React from "react";
-import { ReactComponent as Icon } from "./icon.svg";
 import "./card.css";
 
-const Card = () => {
+const Card = ({ head, text, image }) => {
   return (
     <div className="card-container">
       <div className="icon">
-        <Icon />
+        <img src={image} alt="Icon" />
       </div>
-      <h1>Fast and Reliable</h1>
-      <p>
-        Get your Excel workbooks compared faster. You can olways rely on our
-        built-in comparison algorithm.
-      </p>
+      <h1>{head}</h1>
+      <p>{text}</p>
     </div>
   );
 };

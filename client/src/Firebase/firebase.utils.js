@@ -46,10 +46,10 @@ const signIn = (email, password) =>
 
 // Sign In / Sign Up with Google
 const googleProvider = new GoogleAuthProvider();
-// googleProvider.setCustomParameters({
-//   login_hint: "user@example.com",
-//   prompt: "select_account",
-// });
+googleProvider.setCustomParameters({
+  login_hint: "user@example.com",
+  prompt: "select_account",
+});
 const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
 
 // Monitor Auth State

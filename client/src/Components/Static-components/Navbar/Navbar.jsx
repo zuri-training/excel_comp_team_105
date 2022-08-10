@@ -34,10 +34,10 @@ const Navbar = () => {
       </ul>
       <ul className="nav-links__cta">
         <li>
-          <Link to="/log-in">Login</Link>
+          <Link to="/log-in">Sign In</Link>
         </li>
         <li className="sign-up">
-          <Link to="/sign-up">Signup</Link>
+          <Link to="/sign-up">Sign Up</Link>
         </li>
       </ul>
     </nav>

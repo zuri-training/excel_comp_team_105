@@ -23,12 +23,13 @@ import {
 // React router
 import { Link, useNavigate } from "react-router-dom";
 
-// User Context
+// Context
 import { UserContext } from "../../../Contexts/userContext";
 
 const SignUp = () => {
   const [user, setUser] = React.useState({ name: "", email: "", password: "" });
   const [error, setError] = React.useState(false);
+  const { setCurrentUser } = React.useContext(UserContext);
 
   const navigate = useNavigate();
 
@@ -46,13 +47,16 @@ const SignUp = () => {
       .then((userObj) => {
         if (userObj) {
           // Perform actions
+
           setError(false);
           createUserProfileDocument(userObj.user, name);
+          setCurrentUser(userObj.user);
           alert("Account Created Successful");
           navigate("/dashboard-home");
         }
       })
       .catch((err) => {
+        alert(err.message);
         setError(true);
       });
   };
@@ -62,6 +66,7 @@ const SignUp = () => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       if (result) {
         createUserProfileDocument(result.user);
+        setCurrentUser(result.user);
         alert("Account Created Successful");
         navigate("/dashboard-home");
       }

@@ -3,7 +3,6 @@
   width: 100%;
   background-color: var(--nypd-blue);
   padding-block: 0.5rem;
-  padding-inline: 1rem;
   align-items: center;
   justify-content: space-around;
   position: fixed;
@@ -12,6 +11,7 @@
 .logo {
   margin: 0;
   padding: 0;
+  flex-shrink: 2;
 }
 .nav-input {
   flex-basis: 50%;
@@ -50,6 +50,9 @@
 }
 /* MEDIA QUERIES */
 @media screen and (min-width: 500px) {
+  .dash-nav {
+    padding-inline: 1rem;
+  }
   .nav-input {
     display: block;
     margin-inline: 1rem;

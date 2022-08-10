@@ -18,17 +18,6 @@
 .learnmore-text {
   text-align: center;
 }
-.learnmore-link {
-  margin-block-start: 2rem;
-  color: var(--nypd-blue);
-  cursor: pointer;
-  font-weight: 600;
-  display: inline-flex;
-}
-.learnmore-link .arrow-right {
-  display: inline-block;
-  font-size: 20px;
-}
 .learnmore-image {
   margin: 0 auto;
   max-width: 80%;
@@ -37,6 +26,7 @@
   .learnmore-container {
     flex-flow: row nowrap;
     padding-inline: 2rem;
+    gap: 10rem;
   }
   .column-reverse {
     flex-flow: row-reverse nowrap;

@@ -13,6 +13,12 @@ import Image1 from "./image 1.png";
 import Image2 from "./image 2.png";
 import Image3 from "./image 3.png";
 import Image4 from "./image 4.png";
+import Image5 from "./loom.png";
+import Image6 from "./makespace.png";
+import Image7 from "./Mavenlink.png";
+import Image8 from "./card1.png";
+import Image9 from "./card2.png";
+import Image10 from "./card3.png";
 
 // CSS
 import "./landing-page.css";
@@ -67,14 +73,34 @@ const LandingPage = () => {
       <div className="image-container">
         <img src={Image3} alt="Image3" className="image-3" />
         <img src={Image4} alt="Image4" className="image-4" />
+        <img src={Image5} alt="Image4" className="image-5" />
+        <img src={Image6} alt="Image4" className="image-6" />
+        <img src={Image7} alt="Image4" className="image-7" />
       </div>
       <div className="testimonials">
         <h1>Why you can always choose us</h1>
         <div className="cards">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card
+            text={
+              "Get your Excel workbooks  compared faster. You can olways rely on our built-in comparison algorithm."
+            }
+            image={Image8}
+            head={"Fast & Reliable"}
+          />
+          <Card
+            text={
+              "Our XelCompare tool does the comparison job for you. It makes you more efficient and productive."
+            }
+            image={Image9}
+            head={"Saves times"}
+          />
+          <Card
+            text={
+              "Our tool works 10X faster than Excel software. You can choose to highlight differences or anything you like."
+            }
+            image={Image10}
+            head={"Powerful & Flexible  "}
+          />
         </div>
       </div>
       <div className="docs-container">
@@ -83,10 +109,10 @@ const LandingPage = () => {
           <p>Our primary goal is comparison, but you can do lots more!</p>
         </div>
         <div>
-          <LearnMore />
-          <LearnMore />
-          <LearnMore />
-          <LearnMore />
+          <LearnMore head={"Highlight differences on Excel worksheet"} />
+          <LearnMore head={"Highlight duplicates on Excel worksheet"} reverse />
+          <LearnMore head={"Merge Excel worksheets"} />
+          <LearnMore head={"Remove duplicates on Excel worksheet"} reverse />
         </div>
       </div>
       <div className="get-started">

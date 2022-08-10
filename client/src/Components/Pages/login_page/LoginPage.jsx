@@ -32,9 +32,9 @@ const LoginPage = () => {
       setCurrentUser(userCreds);
       navigate("/dashboard-home");
     } catch (error) {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
+      alert(error.message);
       // Show error message
       setError(true);
     }

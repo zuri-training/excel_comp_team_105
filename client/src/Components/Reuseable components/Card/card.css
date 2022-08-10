@@ -5,14 +5,13 @@
   background: hsl(188, 60%, 90%);
   box-shadow: 0px 3px 10px rgba(38, 122, 137, 0.3);
   border-radius: 10px;
-  padding: 1rem 0.2rem;
+  padding: 1rem 0.5rem;
   max-width: 230px;
   gap: 0.5rem;
 }
 .card-container .icon {
   display: grid;
   place-content: center;
-  padding: 12px;
   margin-block-end: 0.5rem;
   width: 50px;
   height: 50px;
@@ -21,7 +20,6 @@
 }
 .card-container h1 {
   color: var(--nypd-blue);
-  font-size: 1.5em;
 }
 .card-container p {
   text-align: center;

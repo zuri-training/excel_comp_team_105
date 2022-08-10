@@ -46,7 +46,7 @@ const DashsideNav = () => {
             }}
           >
             <IoIosLogOut />
-            <p>Log Out</p>
+            <p>Sign Out</p>
           </div>
         </div>
       </div>
