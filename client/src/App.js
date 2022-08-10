@@ -27,6 +27,7 @@ import { monitorAuthState } from "./Firebase/firebase.utils";
 // Context
 import { UserContext } from "./Contexts/userContext";
 
+
 function App() {
   const { currentUser, setCurrentUser } = React.useContext(UserContext);
 

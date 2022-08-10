@@ -127,7 +127,7 @@ const SignUp = () => {
             <SiFacebook />
           </div>
         </form>
-      </div>
+      </div>   
     </>
   );
 };
