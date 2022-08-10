@@ -1,6 +1,5 @@
 import React from "react";
 import Image5 from "./image 5.png";
-import { BiRightArrowAlt } from "react-icons/bi";
 import "./learn-more.css";
 
 const LearnMore = ({ head, reverse }) => {
