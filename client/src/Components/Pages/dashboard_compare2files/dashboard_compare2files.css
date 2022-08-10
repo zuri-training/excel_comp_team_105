@@ -1,0 +1,43 @@
+.cmmain {
+  min-width: 100%;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+  min-height: 90vh;
+}
+.framecont {
+  display: flex;
+  flex-direction: column;
+}
+.cmframe {
+  max-width: 300px;
+  border: 2px solid #ccc;
+  padding: 0.5rem;
+}
+.btmpt {
+  font-size: 10px;
+  text-align: center;
+  margin-block: 1rem;
+}
+.btn-container {
+  text-align: center;
+}
+.btn-container .btn {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--nypd-blue);
+  padding: 0.7rem 1.5rem;
+  color: var(--faded-white);
+}
+/* Media Queries */
+@media screen and (min-width: 500px) {
+  .framecont {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .framecont {
+    gap: 6rem;
+  }
+}

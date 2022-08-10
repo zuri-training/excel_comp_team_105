@@ -1,0 +1,53 @@
+.learnmore-container {
+  width: 100%;
+  margin: auto;
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 0.8rem;
+}
+.column-reverse {
+  flex-flow: column-reverse wrap;
+}
+.learnmore-container h1 {
+  color: var(--nypd-blue);
+  font-size: 1.7em;
+}
+.learnmore-text {
+  text-align: center;
+}
+.learnmore-image {
+  margin: 0 auto;
+  max-width: 80%;
+}
+@media screen and (min-width: 500px) {
+  .learnmore-container {
+    flex-flow: row nowrap;
+    padding-inline: 2rem;
+    gap: 10rem;
+  }
+  .column-reverse {
+    flex-flow: row-reverse nowrap;
+  }
+  .learnmore-text {
+    text-align: left;
+    flex-basis: 55%;
+    align-self: center;
+  }
+  .learnmore-image {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .learnmore-container {
+    padding-inline: 5rem;
+  }
+  .learnmore-text {
+    flex-basis: 40%;
+  }
+  .learnmore-image {
+    max-width: 40%;
+  }
+}

@@ -1,0 +1,39 @@
+.cmmain {
+  display: grid;
+  place-content: center;
+}
+.cmcontainer {
+  margin: 20% auto;
+}
+.cmframer {
+  max-width: 300px;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.btmp {
+  font-size: 14px;
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+.btns button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+}
+.btns .btn1 {
+  background-color: var(--nypd-blue);
+  color: #d7f1f5;
+  padding-block: 0.6rem;
+}
+.btns .btn2 {
+  border: 1px solid var(--nypd-blue);
+  color: #232424;
+  padding-inline: 1.6rem;
+}

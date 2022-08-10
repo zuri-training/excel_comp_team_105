@@ -1,29 +1,81 @@
 import React from "react";
+
+// CSS
 import "./login_page.css";
 
+// Firebase
+import { signIn } from "../../../Firebase/firebase.utils";
+
+// React router
+import { useNavigate } from "react-router-dom";
+
+// user context
+import { UserContext } from "../../../Contexts/userContext";
+
 const LoginPage = () => {
+  const [error, setError] = React.useState(false);
+  const { setCurrentUser } = React.useContext(UserContext);
+  const emailRef = React.createRef();
+  const passwordRef = React.createRef();
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    try {
+      const userCreds = await signIn(email, password);
+
+      // send usercreds to backend
+      setError(false);
+      setCurrentUser(userCreds);
+      navigate("/dashboard-home");
+    } catch (error) {
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
+      alert(error.message);
+      // Show error message
+      setError(true);
+    }
+  };
   return (
     <div id="body">
       <div className="loginContainer">
-        <form>
+        <form onSubmit={handleSubmit}>
           <h2>Login</h2>
 
-          <label>
-            Username
+          <label htmlFor="name">
+            Email
             <div className="inputbox">
-              <input type="username" placeholder="Shearly Wilson" />
+              <input
+                type="email"
+                placeholder="shearlywilson@address.company"
+                id="name"
+                ref={emailRef}
+              />
             </div>
           </label>
 
-          <label>
+          <label htmlFor="password">
             Password
             <div className="inputbox">
-              <input type="Password" placeholder="*********" />
+              <input
+                type="Password"
+                placeholder="*********"
+                id="password"
+                ref={passwordRef}
+              />
             </div>
           </label>
 
-          <label className="checkbox">
-            <input type="checkbox" id="Remember me" name="Remember me" />
+          <label className="checkbox" htmlFor="remember">
+            <input
+              style={{ margin: "unset" }}
+              type="checkbox"
+              id="remember"
+              name="remember"
+            />
             <span>Remember me</span>
           </label>
 
@@ -32,7 +84,7 @@ const LoginPage = () => {
           </div>
 
           <div className="forgotReset">
-            <a href="/forgot">Forgot Password?</a>
+            Forgot Password?
             <a href="/forgot">
               <span>Reset</span>
             </a>
