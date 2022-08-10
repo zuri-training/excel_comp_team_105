@@ -32,4 +32,4 @@ https://www.figma.com/proto/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29
 
 Issues resolved: Primary and Secondary Buttons with Icons
 
-Solution: Fixing all Icons in the Buttons by making all variants belong to a uniform parent component
+Solution: Fixing all Icons in the Buttons by making all variants belong to a single parent component
