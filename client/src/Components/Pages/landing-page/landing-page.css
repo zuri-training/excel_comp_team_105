@@ -12,9 +12,15 @@
 .hamburger {
   position: fixed;
   right: 1rem;
-  top: 1.3rem;
+  top: 1rem;
   z-index: 1000;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+.hamburger.show {
+  color: var(--nypd-blue);
+}
+.hamburger.white {
+  color: var(--faded-white);
 }
 .landing-cta {
   padding-inline: 1rem;

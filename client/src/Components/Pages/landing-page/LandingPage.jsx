@@ -32,7 +32,10 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
-      <div className="hamburger" onClick={() => setHidden(!hidden)}>
+      <div
+        className={`hamburger ${hidden ? "show" : "white"}`}
+        onClick={() => setHidden(!hidden)}
+      >
         {hidden ? <GiHamburgerMenu /> : <AiOutlineClose />}
       </div>
       <Navbar />

@@ -29,8 +29,9 @@ import { UserContext } from "../../../Contexts/userContext";
 const SignUp = () => {
   const [user, setUser] = React.useState({ name: "", email: "", password: "" });
   const [error, setError] = React.useState(false);
+
   const navigate = useNavigate();
-  const { setCurrentUser } = React.useContext(UserContext);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUser({
@@ -47,12 +48,12 @@ const SignUp = () => {
           // Perform actions
           setError(false);
           createUserProfileDocument(userObj.user, name);
+          alert("Account Created Successful");
           navigate("/dashboard-home");
         }
       })
       .catch((err) => {
         setError(true);
-        console.error(err);
       });
   };
   const handleGoogleSignUp = async () => {
@@ -61,6 +62,7 @@ const SignUp = () => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       if (result) {
         createUserProfileDocument(result.user);
+        alert("Account Created Successful");
         navigate("/dashboard-home");
       }
     } catch (error) {
@@ -98,7 +100,9 @@ const SignUp = () => {
           </div>
           <div className="checkbox">
             <input type="checkbox" id="Terms" name="Terms" />
-            <label htmlFor="Terms">Terms of Service</label>
+            <label htmlFor="Terms">
+              I have and agreed to the terms of service
+            </label>
           </div>
           <div className="button">
             <Button>Create Account</Button>
