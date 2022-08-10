@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// React router
+import { BrowserRouter } from "react-router-dom";
+
+// Context
+import { UserProvider } from "./Contexts/userContext";
+import NavProviderComp from "./Contexts/navbarToggleContext";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <UserProvider>
+      <NavProviderComp>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </NavProviderComp>
+    </UserProvider>
   </React.StrictMode>
 );
 

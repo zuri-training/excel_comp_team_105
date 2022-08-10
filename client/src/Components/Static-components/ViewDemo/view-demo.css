@@ -1,0 +1,25 @@
+.view-container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding-inline: 3rem;
+  padding: 1rem;
+}
+.view-container img {
+  box-shadow: 0px 3px 10px rgba(38, 122, 137, 0.5);
+  object-fit: cover;
+}
+.view-container button {
+  padding: 0.8rem 2rem;
+}
+@media screen and (min-width: 500px) {
+  .view-container {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 760px) {
+  .view-container {
+    max-width: 50%;
+  }
+}

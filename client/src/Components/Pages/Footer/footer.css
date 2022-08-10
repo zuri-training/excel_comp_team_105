@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: var(--button-clr);
+  font: 200 1rem var(--ff-manrope);
+  line-height: 1.7rem;
+}
+
+.image img {
+  width: 200px;
+  cursor: pointer;
+}
+.image:hover,
+.image:focus {
+  opacity: 0.8;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.grid-container h4 {
+  padding-block-end: 1rem;
+}
+@media screen and (min-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding-inline-start: 15%;
+  }
+}
+a:hover {
+  text-decoration: underline;
+}
+.footer p {
+  text-align: center;
+  color: #ffffff;
+  padding-block: 1rem;
+}
+.footer p > a span {
+  display: block;
+  font-weight: 400;
+  cursor: pointer;
+  max-width: min-content;
+  margin: 0 auto;
+}
+.footer p > span:hover {
+  opacity: 0.7;
+}
