@@ -31,4 +31,5 @@ Prototyping
 https://www.figma.com/proto/DnC164r4V3pl8RWdOPCnFi/Github-Links?node-id=713%3A29239&scaling=scale-down&page-id=55%3A76&starting-point-node-id=713%3A29239
 
 Issues resolved: Primary and Secondary Buttons with Icons
+
 Solution: Fixing all Icons in the Buttons by making all variants belong to a uniform parent component
