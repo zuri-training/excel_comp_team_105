@@ -1,0 +1,276 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 10px;
+    background-color: #1D5C67;
+}
+.xelcomp-logo{
+    color: white;
+    cursor: pointer;
+}
+.profile-pic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.usersName {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.img1 {
+    width: 48px;
+    height: 48px;
+}
+
+/* styling of the side-bar */
+
+.sideBar {
+    margin: 0;
+    padding: 22px;
+    width: 220px;
+    position: fixed;
+    /* top: 68px; */
+    left: 0;
+    height: 100%;
+    background: #D7F1F5;
+}
+.savedFile {
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 14px;
+    height: 35px;
+    background: #1D5C67;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.savedFile-list {
+    padding: 10px 24px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.savedFile-list li {
+    font-size: 15px;
+}
+.savedFile-list li:hover {
+    border: 1px solid #1D5C67;
+    border-radius: 5px;
+    text-align: center;
+}
+.savedFile-list li:active {
+    background: #1D5C67;
+     
+}
+.savedFile-list li a:active {
+    color: white;
+}
+
+
+ /* Main styling starts below */
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    margin: 2em auto;
+}
+.img-doc {
+    /* width: 742px;
+    height: 550px; */
+    width: 942px;
+    height: 668px;
+    cursor: pointer;
+    border: 1px solid #1D5C67;
+}
+.call-to-action-btns {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+.download-btn {
+    width: 200px;
+    height: 43px;
+    background: #1D5C67;
+    border-radius: 16px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #D7F1F5;
+
+}
+.share-btn {
+    width: 200px;
+    height: 43px;
+    border: 2px solid #1D5C67;
+    border-radius: 16px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #232424;
+    background: transparent;
+}
+
+/* media query starts here */
+
+@media (min-width: 360px) and (max-width: 414px) {
+
+    .head {
+        justify-content: space-between;
+        width: 100%;
+        padding: 7px;
+        /* position: fixed; */
+        top: 0;
+    }
+    .xelcomp-logo{
+        width: 100px;
+    }
+    .profile-pic {
+        align-items: center;
+        gap: 5px;
+    }
+    .img1 {
+        width: 40px;
+        height: 40px;
+    }
+    .usersName {
+        font-size: 10px;
+    }
+    .sideBar {
+        position: fixed;
+        top: 54px;
+        padding: 10px;
+        width: 100px;
+        height: 100%;
+    }
+    .savedFile {
+        padding: 1px;
+        margin-top: 25px;
+        gap: 5px;
+        height: 25px;
+        font-size: 11px;
+    }
+    .savedFile-list {
+        padding: 3px;
+    }
+    .savedFile-list li {
+        font-size: 13px;
+    }
+    .content {
+        margin-left: 50px;
+        margin-top: 6em;
+    }
+    .img-doc {
+        width: 80%;
+        height: 178px;
+    }
+    .call-to-action-btns {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+    .download-btn {
+        width: 100px;
+        height: 23px;
+        font-size: 11px;
+    }
+    .share-btn {
+        width: 100px;
+        height: 23px;
+        font-size: 11px; 
+    }
+}
+@media (min-width: 540px) and (max-width: 912px) {
+    .head {
+        justify-content: space-around;
+        width: 100%;
+        padding: 7px;
+        /* position: fixed; */
+        top: 0;
+    }
+    .xelcomp-logo{
+        width: 100px;
+    }
+    .profile-pic {
+        align-items: center;
+        gap: 5px;
+    }
+    .img1 {
+        width: 40px;
+        height: 40px;
+    }
+    .usersName {
+        font-size: 10px;
+    }
+    .sideBar {
+        position: fixed;
+        top: 54px;
+        padding: 10px;
+        width: 130px;
+        height: 100%;
+    }
+    .savedFile {
+        padding: 1px;
+        margin-top: 25px;
+        gap: 5px;
+        height: 25px;
+        font-size: 11px;
+    }
+    .savedFile-list {
+        padding: 3px;
+    }
+    .savedFile-list li {
+        font-size: 13px;
+    }
+    .content {
+        margin-top: 3em;
+        padding: 30px;
+    }
+    .img-doc {
+        margin-left: 50px;
+        width: 60%;
+        height: 178px;
+    }
+    .call-to-action-btns {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+    .download-btn {
+        width: 100px;
+        height: 23px;
+        font-size: 11px;
+        margin-left: 50px;
+    }
+    .share-btn {
+        width: 100px;
+        height: 23px;
+        font-size: 11px;
+        margin-left: 50px;
+    }
+}
+@media (min-width: 994px) and (max-width: 1280px) {
+    .img-doc {
+        margin-left: 50px;
+        width: 60%;
+        height: 378px;
+    }
+}

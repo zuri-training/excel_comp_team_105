@@ -1,0 +1,210 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1D5C67;
+}
+.logo-image {
+    color: white;
+    cursor: pointer;
+}
+.image1 {
+    width: 48px;
+    height: 48px;
+}
+.drop-down-icon {
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 200;
+    cursor: pointer;
+}
+.userDP {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.the-user {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Styling below is for the side bar */
+
+.side-bar {
+    border-right: 1px solid #B4B6B6;
+    margin: 0;
+    width: 180px;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    height: 100%;
+}
+.savedfi {
+    margin-top: 20px;
+}
+.side-tabs {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 14px;
+    height: 35px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.side-tabs:hover {
+    background-color: #9CDBE6;
+    width: 180px;
+}
+.log-out-tab {
+    display: flex;
+    align-items: end;
+    padding: 0 20px;
+    gap: 14px;
+    height: 790px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.log-out-text {
+    color: #1D5C67;
+    font-weight: 700;
+}
+
+/* Styling below is for the main*/
+
+
+.file-headline {
+    border-bottom: 2px solid #B4B6B6;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 60%;
+    margin:  2em auto;
+    padding: 30px;
+}
+.main-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-img {
+    width: 65px;
+    height: 65px;
+}
+.uploadTab {
+    display: flex;
+    flex-direction: column;
+}
+.tabDetails {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 5px;
+}
+.uploadNote {
+    color: #B4B6B6;
+    font-size: 12px;
+}
+.uploadPic {
+    width: 98%;
+    padding: 5px;
+    color:  #1D5C67;
+    border-radius: 5px;
+    border: 1px solid #B4B6B6;
+    cursor: pointer;
+}
+.uploadPic:active {
+    background: #1D5C67;
+    color: white;
+}
+.DeletePic:active {
+    background: #1D5C67;
+    color: white;
+}
+.DeletePic {
+    background-color: transparent;
+    border: 2px solid #1D5C67;
+    width: 48%;
+    padding: 5px;
+    color: #1D5C67;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.userDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.username-section {
+    border-bottom: 1px solid #B4B6B6;
+}
+.email-section {
+    border-bottom: 1px solid #B4B6B6;
+}
+.userInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 300px;
+    outline: none;
+}
+input[type="text"], input[type="password"] {
+    border: none;
+    outline: none;
+}
+.create-password-section {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.new-password-Input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 300px;
+    border: 1px solid #267A89;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.save-btn {
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+}
+.save-btn button {
+    width: 200px;
+    background: #1D5C67;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+}
+.save-btn button:active {
+    color: #1D5C67;
+    border: 2px solid #1D5C67;
+    background-color: white;
+}

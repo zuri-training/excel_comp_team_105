@@ -5,6 +5,7 @@ const LoginPage = () => {
   return (
     <div id="body">
       <div className="loginContainer">
+      <h1 className="logo">XelComp</h1>
         <form>
           <h2>Login</h2>
 
