@@ -280,6 +280,8 @@ Huge thanks to the [Ingressive For Good and Zuri Team](https://training.zuri.tea
 
 Team Email - [Email](zuri.team.cv@gmail.com)
 
+Team Contributor - [Twitter](https://twitter.com/dWhy_Q)
+
 Project Link: [https://github.com/zuri-training/excel_comp_team_105/tree/main](https://github.com/zuri-training/excel_comp_team_105/tree/main)
 
 
